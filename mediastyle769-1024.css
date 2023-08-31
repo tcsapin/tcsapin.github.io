@@ -1,0 +1,196 @@
+﻿/* When the screen is between 769px & 1024px wide,
+    stack the links and the search field vertically instead of horizontally */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Header Style */
+    .header_info 
+    {
+        width:100%;
+        max-width: 1024px;
+        min-width: 769px;
+    }
+
+    .GLlogo 
+    {
+        min-width: 120px;
+        max-height: 120px;
+    }
+
+    .GLlogo, .h1GL 
+    {
+        display: inline-block;
+        position: center;
+    }
+
+    .h1GL 
+    {
+        float: left;
+        position: static;
+        font-size: 60px;
+        width: 70%;
+        text-align: left;
+    }
+
+    .noticon {
+        float: right;
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .signin {
+        float: right;
+        background-color: green;
+        color: white;
+        font-size: 20px;
+        border: 0;
+        padding: 5px;
+        min-width: 90px;
+        height: 40px;
+        cursor: pointer;
+    }
+
+    .date {
+        font-size: 16px;
+        float: right;
+    }
+
+    /***************************/
+    .GLcover {
+        width:100%;
+        max-width: 1024px;
+        min-width: 769px;
+        max-height: 400px;
+        min-height: 250px;
+    }
+    /****************************/
+
+    /* Navigation bar*/
+    nav {
+        overflow: hidden;
+        background-color: darkgreen;
+        font-family: Verdana;
+        max-width: 1024px;
+        min-width: 769px;
+        width:100%;
+    }
+
+        /* Links inside the navigation bar */
+        nav a {
+            float: left;
+            font-size: 14px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+    /* The dropdown container */
+    .dropdown_rocks {
+        float: left;
+        overflow: hidden;
+    }
+
+        /* Dropdown button */
+        .dropdown_rocks .dropbtn_rocks {
+            position: relative;
+            font-size: 14px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 10px;
+            background-color: inherit;
+            font-family: inherit; /* Important for vertical align on mobile phones */
+            margin: 0; /* Important for vertical align on mobile phones */
+        }
+
+        /* Add a red background color ot navigation bar links on hover */
+        nav a:hover, .dropdown_rocks:hover .dropbtn_rocks {
+            background-color: red;
+            cursor: pointer;
+        }
+
+    /* Dropdown content (hidden by default) */
+    .dropdown-content_rocks {
+        display: none;
+        position: absolute;
+        background-color: beige;
+        min-width: 120px;
+        box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+        /* Links inside the dropdown */
+        .dropdown-content_rocks a {
+            float: none;
+            color: black;
+            display: block;
+            text-align: left;
+        }
+
+            /* Add a grey background color to dropdown links on hover */
+            .dropdown-content_rocks a:hover {
+                background-color: lightgray;
+            }
+
+    /* Show the dropdown menu on hover */
+    .dropdown_rocks:hover .dropdown-content_rocks {
+        display: block;
+    }
+
+    #home, #rocks, #minerals, #contactus, #registrationform, .search-fill-in, .i-searchbtn {
+        display: inline-block;
+        position: static;
+    }
+    /* Style the search box inside the navigation bar */
+    nav .search-container {
+        float: right;
+        padding: 3px;
+        border: none;
+        margin-top: 4px;
+        margin-right: 8px;
+        font-size: 12px;
+    }
+
+    nav .i-searchbtn {
+        float: right;
+        padding: 6px;
+        margin-right: 8px;
+        background-color: darkgrey;
+        font-size: 10px;
+        border: none;
+        cursor: pointer;
+        width: 12px;
+        height: 12px;
+    }
+
+    .search-fill-in, .i-searchbtn {
+        display: inline-block;
+        position: static;
+        padding: 3px;
+    }
+}
+/******************************************/
+/************ Home page **************/
+/* Animation */
+
+
+
+/******************************************/
+/************ Rocks Page **************/
+#igneousnav_h3, #metanav_h3, #sedinav_h3
+{
+    font-size: 18px;
+}
+
+
+/******************************************/
+/*********** Igneous Page *************/
+.imgigneous:hover {
+    transform: scale(1.5), translateX(50%);
+}
+
+
+
+/******************************************/
+/********* * Registration form *********/

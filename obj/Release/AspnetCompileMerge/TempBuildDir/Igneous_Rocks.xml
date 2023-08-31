@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="Igneous_Rocks_style.xslt"?>
+
+<Igneous>
+  <!--Intrusive-->
+  <rock>
+    <name>Diorite</name>
+    <type>Intrusive</type>
+  </rock>
+  <rock>
+    <name>Gabbro</name>
+    <type>Intrusive</type>
+  </rock>
+  <rock>
+    <name>Granite</name>
+    <type>Intrusive</type>
+  </rock>
+  <rock>
+    <name>Granodiorite</name>
+    <type>Intrusive</type>
+  </rock>
+  <rock>
+    <name>Peridotite</name>
+    <type>Intrusive</type>
+  </rock>
+  <rock>
+    <name>Syenite</name>
+    <type>Intrusive</type>
+  </rock>
+  <!--Extrusive-->
+  <rock>
+    <name>Andesite</name>
+    <type>Extrusive</type>
+  </rock>
+  <rock>
+    <name>Basalt</name>
+    <type>Extrusive</type>
+  </rock>
+  <rock>
+    <name>Dacite</name>
+    <type>Extrusive</type>
+  </rock>
+  <rock>
+    <name>Ignimbrite</name>
+    <type>Extrusive</type>
+  </rock>
+  <rock>
+    <name>Rhyolite</name>
+    <type>Extrusive</type>
+  </rock>
+  <rock>
+    <name>Trachyte</name>
+    <type>Extrusive</type>
+  </rock>
+</Igneous>

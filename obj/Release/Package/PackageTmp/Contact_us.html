@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="device-width, initial-scale=1.0" />
+    <title>Geology Library - Contact Us</title>
+    <link rel="icon" type="image/jpg" href="/Images/geology_title.jpg" />
+    <link rel="stylesheet" type="text/css" href="style_all.css" />
+    <!--<link rel="stylesheet" type="text/css" media="(max-width:1024px)" href="mediastyle769-1024.css" />
+    <link rel="stylesheet" type="text/css" media="(max-width:768px)" href="mediastylel426-768.css" />
+    <link rel="stylesheet" type="text/css" media="(max-width:425px)" href="mediastyle376-425.css" />
+    <link rel="stylesheet" type="text/css" media="(max-width:375px)" href="mediastyle320-375.css" />
+    <link rel="stylesheet" type="text/css" media="(max-width:320px)" href="mediastyleless320.css" />-->
+    <script type="text/javascript" src="script_all.js"></script>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="header_info">
+            <input type="image" id="GLlogo" class="GLlogo" src="Images/geology_headerlogo.jpg" onclick="window.location.href='Home.html'" alt="logo_cross-hammers" title="Geology Library - Home" />
+            <h1 class="h1GL">Geology Library</h1>
+            <button id="signin" class="signin" name="signin" onclick="showCredentials()">Sign In</button>
+            <input id="noticon" class="noticon" type="image" src="Images/icons/notification_icon.jpg" onclick="showNotifications()" />
+        </div>
+    </header>
+    <!--Navigation bar-->
+    <nav>
+        <a href="Home.html">Home</a>
+        <div class="dropdown_rocks">
+            <button class="dropbtn_rocks" onclick="window.location.href='Rocks.html'">Rocks</button>
+            <div class="dropdown-content_rocks">
+                <a href="Igneous_Rocks.html">Igneous Rocks</a>
+                <a href="Metamorphic_Rocks.html">Metamorphic Rocks</a>
+                <a href="Sedimentary_Rocks.html">Sedimentary Rocks</a>
+            </div>
+        </div>
+        <a href="Minerals.html">Minerals</a>
+        <a href="Periodic_Table.html">Periodic Table</a>
+        <a href="Contact_us.html">Contact us</a>
+        <a href="Registration.html">Register</a>
+        <div class="search-container">
+            <form action="action_page.php">
+                <div class="search-bar">
+                    <input class="search-fill-in" type="text" placeholder="Search.." name="search" />
+                    <input class="i-searchbtn" type="image" src="Images/icons/search_icon.jpg" name="i-searchbtn"/>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <div class="GLcover">
+        <img class="GLcover" src="Images/geology_headercover.jpg" alt="valley_mountains" />
+    </div>
+    <!-- Support Form -->
+    <div>
+        <form class="supportform" method="post" action="support.jsp" target="_blank">
+            <fieldset>
+                <legend>Your details and enquiry</legend>
+                <ol>
+                    <li>
+                        <label for="name">
+                            <em>Name <strong class="star">*</strong></em>
+                            <br />
+                            <input class="namebox" type="text" name="Name" placeholder="Name.." required autofocus/>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="age">
+                            <em>Age <strong class="star">*</strong></em>
+                            <br />
+                            <input class="agebox" type="number" min="13" max="100" placeholder="13-100" name="Age" required/>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="phone">
+                            <em>Telephone <strong class="star">*</strong></em>
+                            <br />
+                            <select id="countrycode" class="countrycode">
+                                <optgroup label="Country Code">
+                                    <option class="CCode" value="+30">GR +30</option>
+                                    <option class="CCode" value="+44">UK  +44</option>
+                                    <option class="CCode" value="+357" selected>CY +357</option>
+                                </optgroup>
+                            </select>
+                            <input class="phonebox" type="text" id="phone" name="phone" placeholder="telephone numbers of 8-15 length" pattern="[0-9]{8-15}" required />
+                            <br />
+                            <strong class="star">*</strong><small> Telephone numbers of 8-15 length are valid. </small>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="email">
+                            <em>Email Address <strong class="star">*</strong></em>
+                            <br />
+                            <input class="emailbox" type="email" name="emailBox" placeholder="characters@characters.domain" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
+                        </label>
+                    </li>
+                    <li>
+                        <label for="attachment">
+                            <em>Attach a file/image:</em>
+                            <br/>
+                            <input class="filebox" type="file" name="filebox" />
+                        </label>
+                    </li>
+                    <li>
+                        <label for="message">
+                            <em>Message <strong class="star">*</strong></em>
+                            <br />
+                            <textarea class="msgbox" cols="35" rows="20" name="message" placeholder="Add your message here..."></textarea>
+                        </label>
+                    </li>
+                </ol>
+                <button class="submitbtn">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+    <!--Article-->
+    <article>
+    </article>
+    <!--Footer-->
+    <footer>
+        <strong>&copy; Copyrights by Andreas Piniais</strong>
+        <br />
+        <strong>Email: <a id="footer_email" href="mailto:ap181844@students.euc.ac.cy" target="_top">Send Mail</a></strong>
+        <br />
+        <em>Created in Thursday 19-March-2020</em>
+        <br />
+        <small>Last updated at 21:30</small>
+    </footer>
+</body>
+</html>

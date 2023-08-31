@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/css" href="style_all.css"?>
+<Hand-Specimen>
+  <!--Acetamide-->
+  <Mineral>
+    <name>Acetamide</name>
+    <formula>CH<sub>3</sub>CONH<sub>2</sub></formula>
+    <System>Trigonal</System>
+    <Color>Colourless, Grey</Color>
+    <FormandHabit>Crystalline</FormandHabit>
+    <Hardness>Less Than 2.50</Hardness>
+    <Streak>White</Streak>
+    <Cleavage>Absent</Cleavage>
+    <Fracture>Conchoidal</Fracture>
+    <Luster>Vitreous To Resinous</Luster>
+    <Specific_Gravity>Very Low - 1.15</Specific_Gravity>
+  </Mineral>
+  <!--Actinolite-->
+  <Mineral>
+    <name>Actinolite</name>
+    <formula>
+      Ca<sub>2</sub>(Ma<sub>3</sub>,Fe(II))Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+    </formula>
+    <System>Monoclinic</System>
+    <Color>Green (Pale Green), Green (Blackish Green)</Color>
+    <FormandHabit>Bladed, Fibrous, Prismatic</FormandHabit>
+    <Hardness>5 - 6</Hardness>
+    <Streak>Unobtainable, White</Streak>
+    <Cleavage>1</Cleavage>
+    <Fracture>Irregular/Uneven</Fracture>
+    <Luster>Dull</Luster>
+    <Specific_Gravity>Medium - 3.00</Specific_Gravity>
+  </Mineral>
+</Hand-Specimen>

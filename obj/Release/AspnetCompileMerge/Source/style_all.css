@@ -1,0 +1,672 @@
+﻿body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Periodic table picture */
+.pt_pic {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* Header Style */
+.header_info {
+    position: static;
+    display: inline-flex;
+    width: 100%;
+    min-width: 100px;
+    height:100%;
+    min-height:100px;
+}
+
+.GLlogo {
+    float:left;
+    width: 100%;
+    max-width: 180px;
+    min-width: 150px;
+    height:100%;
+    max-height: 130px;
+    min-height: 100px;
+}    
+
+.h1GL {
+    float: left;
+    font-size: 50px;
+    width: 100%;
+    height:100%;
+    text-align: left;
+    padding-right:5%;
+}
+
+.noticon {
+    float: right;
+    width: 100%;
+    max-width:30px;
+    min-width:20px;
+    height: 30px;
+    min-height:10px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.signin {
+    float: right;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    border: 0;
+    padding: 5px;
+    width: 100%;
+    max-width: 100px;
+    min-width: 100px;
+    max-height:50px;
+    cursor: pointer;
+}
+
+.date {
+    font-size: 12px;
+    float: right;
+    width: 100%;
+    height:100%;
+}
+
+.GLlogo, .h1GL, .signin, .noticon {
+    display: inline-block;
+    position: relative;
+}
+/**************************/
+.GLcover {
+    width: 100%;
+    height: 100%;
+    max-height:400px;
+    min-height:200px;
+}
+/**************************/
+
+/* Navigation bar*/
+nav {
+    overflow: hidden;
+    background-color: darkgreen;
+    font-family: Verdana;
+    width: 100%;
+    max-width:2550px;
+    min-width: 100px;
+    height:100%;
+
+}
+
+/* Links inside the navigation bar */
+nav a {
+    float: left;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown_rocks {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown_rocks .dropbtn_rocks {
+    width:100%;
+    position: relative;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px;
+    background-color: darkgreen;
+    font-family: Verdana; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color ot navigation bar links on hover */
+nav a:hover, .dropdown_rocks:hover .dropbtn_rocks {
+    background-color: red;
+    cursor: pointer;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content_rocks {
+    display: none;
+    position: absolute;
+    background-color: beige;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content_rocks a {
+    float: none;
+    color: black;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content_rocks a:hover {
+    background-color: lightgrey;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown_rocks:hover .dropdown-content_rocks {
+    display: block;
+}
+
+#home, #rocks, #minerals, #contactus, #registrationform, .search-fill-in, .i-searchbtn {
+    display: inline-block;
+    position: static;
+}
+/* Style the search box inside the navigation bar */
+nav .search-container {
+    float: right;
+    padding: 4px;
+    border: none;
+    margin-top: 1px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+nav .i-searchbtn {
+    float: right;
+    padding: 6px;
+    margin-right: 16px;
+    background-color: darkgrey;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
+}
+
+.search-fill-in, .i-searchbtn {
+    display: inline-block;
+    position: static;
+    padding: 5px;
+}
+/****************************/
+/****** Home page ******/
+/* Article */
+#home_article {
+    width: 60%;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+}
+
+.glgisvid {
+    width: 100%;
+    height: 320px;
+}
+
+.h1_defgeo, .p_defgeo, .glgisvid {
+    position: relative;
+    display: block;
+}
+
+#guide_msg 
+{
+    text-align: center;
+    width: 60%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+#congra_msg
+{
+    text-align:center;
+}
+
+/* Animations */
+.art {
+    text-align: center;
+    padding-top: 10%;
+    width: 60%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.creationbtn {
+    width: 100%;
+    background-color: green;
+    color: white;
+    font-size: 50px;
+    padding: 5px;
+    text-align: center;
+}
+
+.grounds {
+    background-color: saddlebrown;
+    width: 45%;
+    min-height: 100px;
+    max-height: 900px;
+    border-top: 20px solid green;
+}
+
+#groundWest {
+    border-top-left-radius: 90px;
+}
+
+#groundEast {
+    border-top-right-radius: 90px;
+}
+
+
+#groundWest, #groundEast {
+    position: relative;
+    display: inline-block;
+}
+
+.underground {
+    background-color: darkred;
+    width: 90%;
+    min-height: 200px;
+    max-height: 300px;
+    height: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.animation1 {
+    animation-name: moveWest;
+    animation-duration: 60s;
+    animation-iteration-count: 1;
+}
+
+.animation2 {
+    animation-name: moveEast;
+    animation-duration: 60s;
+    animation-iteration-count: 1;
+}
+
+.animation3 {
+    animation-name: transformUnderground;
+    animation-duration: 60s;
+    animation-iteration-count: 1;
+}
+
+.animation4 {
+    animation-name: rotateCreationbtn;
+    animation-duration: 16s;
+    animation-delay: 1s;
+    animation-direction:reverse;
+    animation-iteration-count: 3;
+}
+
+@keyframes moveWest {
+    100% {
+        transform: translateX(-50%);
+        border-top-right-radius: 50px;
+    }
+}
+
+@keyframes moveEast {
+    100% {
+        transform: translateX(50%);
+        border-top-left-radius: 50px;
+    }
+}
+
+@keyframes transformUnderground {
+    100% {
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        background-color: darkred;
+        border-top-left-radius: 200px;
+        border-top-right-radius: 200px;
+        transform: translateY(-150px);
+    }
+}
+
+@keyframes rotateCreationbtn {
+    100% {
+        transform: rotateY(360deg) rotateZ(360deg) rotateX(360deg);
+    }
+}
+
+/*****************************/
+/****** Rocks Page ******/
+.rocks_article {
+    background-color: beige;
+    padding-left: 20%;
+    padding-right: 20%;
+    width: 60%;
+}
+
+.rocksnavall {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top:1%;
+}
+
+#igneousnav, #metanav, #sedinav {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 20px;
+    border-right: 2px solid black;
+}
+
+.rocksnav:link {
+    color: darkblue;
+}
+
+.rocksnav:visited {
+    color: red;
+}
+
+.rocksnav:hover {
+    color: orange;
+    transition: color 2s;
+}
+
+.rocksnav:active {
+    color: green;
+    transition: color 2s;
+}
+
+@media print {
+    dd p {
+        color: green;
+    }
+
+    dd p {
+        -webkit-column-count: 2;
+        -webkit-column-gap: 5px;
+        -webkit-column-rule: 1px solid blue;
+        color: sandybrown;
+    }
+}
+
+
+/*******************************/
+/****** Igneous Page ******/
+.igneous_article {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.igneousrocks_h {
+    text-align: center;
+}
+
+/* Igneous XML */
+.igneousembd {
+    float: right;
+    height: 500px;
+    width: 30%;
+}
+
+.xmltbl {
+    border: 1px solid darkblue;
+    font-size: 18px;
+}
+
+.xmlth {
+    color: white;
+    background-color: darkgreen;
+}
+
+.xmltd {
+    color: yellow;
+    background-color: green;
+}
+
+.xmltdintru {
+    color: yellow;
+    background-color: green;
+}
+
+.xmltdextru {
+    color: green;
+    background-color: yellow;
+}
+/*****/
+/* Igneous buttons & info */
+.igneousinfo {
+    width: 60%;
+}
+
+.igneoustbl, .igneoustbl th, .igneoustbl td {
+    border: 1px solid;
+    background-color: lightyellow;
+}
+
+.igneoustbl th, .igneoustbl td {
+    padding: 15px;
+}
+
+.igneousbtns {
+    background-color: darkgray;
+    font-size: 20px;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.igneousbtns .igneousinfodrop {
+    position: inherit;
+    display: inline-block;
+}
+
+.igneousbtns:focus {
+    background-color: green;
+    color: white;
+}
+
+.imgigneous 
+{
+    width: 100%;
+    transition: transform .2s;
+    margin:0px;
+}
+
+.igneousinfo .igneousbtns {
+    position: relative;
+    display: block;
+}
+
+.xmligneousinfo .igneousinfo {
+    display: block;
+}
+
+.igneousinfodrop {
+    display: none;
+}
+/******************************/
+/****** Minerals XML ******/
+
+/******************************/
+/****** Contact Us *********/
+.supportform {
+    width: 100%;
+}
+
+.namebox {
+    padding-right: 50px;
+}
+
+.agebox {
+}
+
+.CCode {
+    display: block;
+}
+
+.phonebox {
+}
+
+.emailbox {
+    padding-right: 50px;
+}
+
+.msgbox {
+    grid-auto-rows: auto;
+}
+
+.submitbtn {
+    width: 300px;
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+    background-color: green;
+    margin-left: 35px;
+}
+
+/****** Registration form ******/
+.regform {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.gender, .dateofbirth, .username, .fname, .lname,
+.email1, .email2, .password1, .password2, .country,
+.signupupdates, .privacy {
+    font-size: 18px;
+}
+
+.usernamebox, .fnamebox, .lnamebox,
+.email1box, .email2box, .password1box, .password2box {
+    padding-right: 40px;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.dbirth {
+    margin-left: 5px;
+}
+
+.username {
+    margin-left: 12px;
+}
+
+.fname {
+    margin-left: 8px;
+}
+
+.lname {
+    margin-left: 10px;
+}
+
+.email1 {
+    margin-left: 55px;
+}
+
+.email2{
+    margin-left: 0px;
+}
+
+.email2box {
+    margin-right: 14px;
+}
+
+.password1 {
+    margin-left: 26px;
+}
+
+.password2box {
+    margin-right: 42px;
+}
+
+.passinfo {
+    font-size: 14px;
+}
+
+.country {
+    margin-left: 10px;
+}
+
+.countrybox {
+    margin-left: 5px;
+}
+
+.register {
+    text-align: center;
+    width: 100%;
+    background-color: green;
+    color: white;
+}
+
+.register {
+    font-size: 30px;
+}
+
+/* required red stars */
+.star {
+    color: red;
+}
+
+/* Footer */
+footer {
+    float: right;
+    width: 100%;
+    background-color: darkslategrey;
+    color: white;
+    text-align: center;
+}
+
+.tm {
+    font-size: 50%;
+}
+
+.footer_email {
+}
+
+/**/
+
+@media screen and (min-width:526px) and (max-width:1024px)
+{
+    body {
+        min-width: 526px;
+        max-width:1024px;
+    }
+
+    .h1GL {
+        font-size: 40px;
+    }
+
+    .imgigneous:hover {
+        -ms-transform: scale(1.2) translate(50%);
+        -webkit-transform: scale(1.2) translate(50%);
+        -moz-transform: scale(1.2) translate(50%);
+        transform: scale(1.2) translate(50%);
+    }
+}
+
+@media screen and (max-width:525px)
+{
+    body 
+    {
+        min-width: 525px;
+    }
+    .h1GL
+    {
+        font-size:30px;
+    }
+
+    .signin
+    {
+        font-size:20px;
+        max-width:100px;
+        min-width:70px;
+        max-height:50px;
+        min-height:20px;
+        padding: 1px;
+    }
+
+    .imgigneous:hover {
+        -ms-transform: scale(1.8) translate(50%);
+        -webkit-transform: scale(1.8) translate(50%);
+        -moz-transform: scale(1.8) translate(50%);
+        transform: scale(1.8) translate(50%);
+    }    
+}

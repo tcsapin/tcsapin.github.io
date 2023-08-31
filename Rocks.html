@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="device-width, initial-scale=1.0" />
+    <title>Geology Library - Rocks</title>
+    <link rel="icon" type="image/jpg" href="/Images/geology_title.jpg" />
+    <link rel="stylesheet" type="text/css" href="style_all.css" />
+    <!--<link rel="stylesheet" type="text/css" media="(max-width:1024px)" href="mediastyle769-1024.css" />
+    <link rel="stylesheet" type="text/css" media="(max-width:768px)" href="mediastylel426-768.css" />
+    <link rel="stylesheet" type="text/css" media="(max-width:425px)" href="mediastyle376-425.css" />
+    <link rel="stylesheet" type="text/css" media="(max-width:375px)" href="mediastyle320-375.css" />
+    <link rel="stylesheet" type="text/css" media="(max-width:320px)" href="mediastyleless320.css" />-->
+    <script type="text/javascript" src="script_all.js"></script>
+    <!--jQuery scripts-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        // Fade In Rocks information
+        $(document).ready(function () {
+            $("h2").css("display", "none");
+            $("p").css("display", "none");
+            $("h2").fadeIn(1000);
+            $(".p1").fadeIn(2000);
+            $(".p2").fadeIn(3000);
+            $(".p3").fadeIn(4000);
+            $(".p4").fadeIn(5000);
+        });
+    </script>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="header_info">
+            <img id="GLlogo" class="GLlogo" src="Images/geology_headerlogo.jpg" onclick="window.location.href='Home.html'" alt="logo_cross-hammers" title="Geology Library - Home" />
+            <h1 class="h1GL">Geology Library</h1>
+            <button id="signin" class="signin" name="signin" onclick="showCredentials()">Sign In</button>
+            <img id="noticon" class="noticon" src="Images/icons/notification_icon.jpg" onclick="showNotifications()" />
+        </div>
+    </header>
+    <!--Navigation bar-->
+    <nav>
+        <a href="Home.html">Home</a>
+        <div class="dropdown_rocks">
+            <button class="dropbtn_rocks" onclick="window.location.href='Rocks.html'">Rocks</button>
+            <div class="dropdown-content_rocks">
+                <a href="Igneous_Rocks.html">Igneous Rocks</a>
+                <a href="Metamorphic_Rocks.html">Metamorphic Rocks</a>
+                <a href="Sedimentary_Rocks.html">Sedimentary Rocks</a>
+            </div>
+        </div>
+        <a href="Minerals.html">Minerals</a>
+        <a href="Periodic_Table.html">Periodic Table</a>
+        <a href="Contact_us.html">Contact us</a>
+        <a href="Registration.html">Register</a>
+        <div class="search-container">
+            <form action="action_page.php">
+                <div class="search-bar">
+                    <input class="search-fill-in" type="text" placeholder="Search.." name="search" />
+                    <input class="i-searchbtn" type="image" src="Images/icons/search_icon.jpg" name="i-searchbtn" onclick="" />
+                </div>
+            </form>
+        </div>
+    </nav>
+    <div class="GLcover">
+        <img class="GLcover" src="Images/geology_headercover.jpg" alt="valley_mountains" />
+    </div>
+    <!--Article-->
+    <article id="rocks_article" class="rocks_article">
+        <div id="rocksnavall" class="rocksnavall">
+            <strong><a id="igneousnav" class="rocksnav" href="Igneous_Rocks.html">Igneous rocks</a></strong>
+            <strong><a id="metanav" class="rocksnav" href="Metamorphic_Rocks.html">Metamorphic rocks</a></strong>
+            <strong><a id="sedinav" class="rocksnav" href="Sedimentary_Rocks.html">Sedimentary rocks</a></strong>
+        </div>
+        <br />
+        <ul>
+            <dl>
+                <li>
+                <dt><h2>Igneous Rocks</h2></dt>
+                <dd>
+                    <p class="p1">
+                        <strong><a href="Igneous_Rocks.html">Igneous rocks</a></strong> are formed from the solidification of molten rock material.
+                        There are two basic types.
+                    </p>
+                    <p class="p2">
+                        <strong>Intrusive igneous rocks</strong> crystallize below Earth's surface, and the slow cooling that occurs there allows large crystals to form.
+                        Examples of intrusive igneous rocks are diorite, gabbro, granite, pegmatite, and peridotite.
+                    </p>
+                    <p class="p3">
+                        <strong>Extrusive igneous rocks</strong> erupt onto the surface, where they cool quickly to form small crystals.
+                        Some cool so quickly that they form an amorphous glass.
+                        These rocks include andesite, basalt, dacite, obsidian, pumice, rhyolite, scoria, and tuff.
+                    </p>
+                </dd>
+                </li>
+                <li>
+                <dt><h2>Metamorphic Rocks</h2></dt>
+                <dd>
+                    <p  class="p1">
+                        <strong><a href="Metamorphic_Rocks.html">Metamorphic rocks</a></strong> have been modified by heat, pressure, and chemical processes, usually while buried deep below Earth's surface.
+                        Exposure to these extreme conditions has altered the mineralogy, texture, and chemical composition of the rocks.
+                        There are two basic types of metamorphic rocks.
+                    </p>
+                    <p  class="p2">
+                        <strong>Foliated metamorphic rocks</strong> such as gneiss, phyllite, schist, and slate have a layered or banded appearance that is produced by exposure to heat and directed pressure.
+                    </p>
+                    <p  class="p3">
+                        <strong>Non-foliated metamorphic rocks</strong> such as hornfels, marble, quartzite, and novaculite do not have a layered or banded appearance.
+                    </p>
+                </dd>
+                </li>
+                <li>
+                <dt><h2>Sedimentary Rocks</h2></dt>
+                <dd>
+                    <p  class="p1">
+                        <strong><a href="Sedimentary_Rocks.html">Sedimentary rocks</a></strong> are formed by the accumulation of sediments.
+                        There are three basic types of sedimentary rocks.
+                    </p>
+                    <p  class="p2">
+                        <strong>Clastic sedimentary rocks</strong> such as breccia, conglomerate, sandstone, siltstone, and shale are formed from mechanical weathering debris.
+                    </p>
+                    <p  class="p3">
+                        <strong>Chemical sedimentary rocks</strong>, such as rock salt, iron ore, chert, flint, some dolomites, and some limestones, form when dissolved materials precipitate from solution.
+                    </p>
+                    <p  class="p4">
+                        <strong>Organic sedimentary rocks</strong> such as coal, some dolomites, and some limestones, form from the accumulation of plant or animal debris.
+                    </p>
+                </dd>
+                </li>
+            </dl>
+        </ul>
+    </article>
+    <!--Footer-->
+    <footer>
+        <strong>&copy; Copyrights by Andreas Piniais</strong>
+        <br />
+        <strong>Email: <a id="footer_email" href="mailto:ap181844@students.euc.ac.cy" target="_top">Send Mail</a></strong>
+        <br />
+        <em>Created in Thursday 19-March-2020</em>
+        <br />
+        <small>Last updated at 21:30</small>
+    </footer>
+</body>
+</html>

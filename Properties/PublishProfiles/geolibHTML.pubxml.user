@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Domains\www.geologylibrarytkb.com\wwwroot</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/CSC209A-AndreasPiniais-20181844-Assignment1.dll">
+      <publishTime>03/26/2020 18:48:53</publishTime>
+    </File>
+    <File Include="bin/CSC209A-AndreasPiniais-20181844-Assignment1.pdb">
+      <publishTime>03/26/2020 18:48:53</publishTime>
+    </File>
+    <File Include="Contact_us.html">
+      <publishTime>03/26/2020 18:42:15</publishTime>
+    </File>
+    <File Include="Home.html">
+      <publishTime>03/26/2020 18:42:20</publishTime>
+    </File>
+    <File Include="Igneous_Rocks.html">
+      <publishTime>03/26/2020 18:41:15</publishTime>
+    </File>
+    <File Include="Igneous_Rocks.xml">
+      <publishTime>03/25/2020 22:48:31</publishTime>
+    </File>
+    <File Include="Igneous_Rocks_style.xslt">
+      <publishTime>03/24/2020 20:25:34</publishTime>
+    </File>
+    <File Include="Images/geology_headercover.jpg">
+      <publishTime>02/25/2020 14:58:52</publishTime>
+    </File>
+    <File Include="Images/geology_headerlogo.jpg">
+      <publishTime>02/25/2020 22:03:45</publishTime>
+    </File>
+    <File Include="Images/geology_title.jpg">
+      <publishTime>02/25/2020 14:50:21</publishTime>
+    </File>
+    <File Include="Images/icons/notification_icon.jpg">
+      <publishTime>03/03/2020 21:43:37</publishTime>
+    </File>
+    <File Include="Images/icons/search_icon.jpg">
+      <publishTime>03/03/2020 21:46:11</publishTime>
+    </File>
+    <File Include="Images/Periodic_table.jpg">
+      <publishTime>02/23/2020 13:34:44</publishTime>
+    </File>
+    <File Include="Images/rocks/igneous/andesite1.jpg">
+      <publishTime>03/11/2020 13:53:00</publishTime>
+    </File>
+    <File Include="Images/rocks/igneous/andesite2.jpg">
+      <publishTime>03/11/2020 14:08:03</publishTime>
+    </File>
+    <File Include="Images/rocks/igneous/basalt-olivine.jpg">
+      <publishTime>03/11/2020 14:33:10</publishTime>
+    </File>
+    <File Include="Images/rocks/igneous/basalt-scoriaceous.jpg">
+      <publishTime>03/11/2020 14:33:26</publishTime>
+    </File>
+    <File Include="Images/rocks/igneous/basalt1.jpg">
+      <publishTime>03/11/2020 14:32:34</publishTime>
+    </File>
+    <File Include="Images/rocks/igneous/basalt2.jpg">
+      <publishTime>03/11/2020 14:32:52</publishTime>
+    </File>
+    <File Include="Images/rocks/igneous/dacite1.jpg">
+      <publishTime>03/11/2020 15:58:47</publishTime>
+    </File>
+    <File Include="Images/rocks/igneous/diorite1.jpg">
+      <publishTime>03/11/2020 17:06:35</publishTime>
+    </File>
+    <File Include="Images/rocks/igneous/gabbro1.jpg">
+      <publishTime>03/11/2020 17:25:40</publishTime>
+    </File>
+    <File Include="Images/rocks/igneous/gabbro2.jpg">
+      <publishTime>03/11/2020 17:26:38</publishTime>
+    </File>
+    <File Include="Images/rocks/igneous/gabbro3.jpg">
+      <publishTime>03/11/2020 17:26:56</publishTime>
+    </File>
+    <File Include="Images/rocks/igneous/granite1.jpg">
+      <publishTime>03/11/2020 17:28:39</publishTime>
+    </File>
+    <File Include="Images/rocks/igneous/granite2.jpg">
+      <publishTime>03/11/2020 17:28:52</publishTime>
+    </File>
+    <File Include="Images/rocks/igneous/granite3.jpg">
+      <publishTime>03/11/2020 17:29:04</publishTime>
+    </File>
+    <File Include="Images/rocks/igneous/granodiorite1.jpg">
+      <publishTime>03/11/2020 17:45:02</publishTime>
+    </File>
+    <File Include="Images/rocks/igneous/granodiorite2.jpg">
+      <publishTime>03/11/2020 17:45:16</publishTime>
+    </File>
+    <File Include="Images/rocks/igneous/igneous_chart.jpg">
+      <publishTime>03/24/2020 19:05:11</publishTime>
+    </File>
+    <File Include="Images/rocks/igneous/ignimbrite1.jpg">
+      <publishTime>03/24/2020 19:26:59</publishTime>
+    </File>
+    <File Include="Images/rocks/igneous/ignimbrite2.jpg">
+      <publishTime>03/24/2020 19:27:15</publishTime>
+    </File>
+    <File Include="Images/rocks/igneous/peridotite.jpg">
+      <publishTime>03/24/2020 19:40:05</publishTime>
+    </File>
+    <File Include="Images/rocks/igneous/rhyolite-flowbanded.jpg">
+      <publishTime>03/24/2020 19:57:55</publishTime>
+    </File>
+    <File Include="Images/rocks/igneous/rhyolite-obsidian.jpg">
+      <publishTime>03/24/2020 19:53:43</publishTime>
+    </File>
+    <File Include="Images/rocks/igneous/rhyolite-pumice1.jpg">
+      <publishTime>03/24/2020 19:55:50</publishTime>
+    </File>
+    <File Include="Images/rocks/igneous/rhyolite-pumice2.jpg">
+      <publishTime>03/24/2020 19:56:43</publishTime>
+    </File>
+    <File Include="Images/rocks/igneous/rhyolite1.jpg">
+      <publishTime>03/24/2020 19:52:00</publishTime>
+    </File>
+    <File Include="Images/rocks/igneous/rhyolite3.jpg">
+      <publishTime>03/24/2020 19:55:23</publishTime>
+    </File>
+    <File Include="Images/rocks/igneous/syenite1.jpg">
+      <publishTime>03/24/2020 20:07:06</publishTime>
+    </File>
+    <File Include="Images/rocks/igneous/syenite2.jpg">
+      <publishTime>03/24/2020 20:07:19</publishTime>
+    </File>
+    <File Include="Images/rocks/igneous/syenite3.jpg">
+      <publishTime>03/24/2020 20:07:29</publishTime>
+    </File>
+    <File Include="Images/rocks/igneous/trachyte1.jpg">
+      <publishTime>03/24/2020 20:13:20</publishTime>
+    </File>
+    <File Include="Images/rocks/igneous/trachyte2.jpg">
+      <publishTime>03/24/2020 20:13:29</publishTime>
+    </File>
+    <File Include="Metamorphic_Rocks.html">
+      <publishTime>03/26/2020 18:41:31</publishTime>
+    </File>
+    <File Include="Minerals.html">
+      <publishTime>03/26/2020 18:41:46</publishTime>
+    </File>
+    <File Include="Periodic_Table.html">
+      <publishTime>03/26/2020 18:42:58</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>03/25/2020 22:18:43</publishTime>
+    </File>
+    <File Include="Registration.html">
+      <publishTime>03/26/2020 18:43:14</publishTime>
+    </File>
+    <File Include="Rocks.html">
+      <publishTime>03/26/2020 18:43:29</publishTime>
+    </File>
+    <File Include="script_all.js">
+      <publishTime>03/26/2020 18:29:30</publishTime>
+    </File>
+    <File Include="Sedimentary_Rocks.html">
+      <publishTime>03/26/2020 18:43:46</publishTime>
+    </File>
+    <File Include="style_all.css">
+      <publishTime>03/26/2020 17:19:24</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/25/2020 22:39:18</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

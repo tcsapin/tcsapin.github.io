@@ -1,0 +1,1079 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="device-width, initial-scale=1.0" />
+    <title>Geology Library - Igneous Rocks</title>
+    <link rel="icon" type="image/jpg" href="/Images/geology_title.jpg" />
+    <link rel="stylesheet" type="text/css" href="style_all.css" />
+    <!--<link rel="stylesheet" type="text/css" media="(max-width:1024px)" href="mediastyle769-1024.css" />
+    <link rel="stylesheet" type="text/css" media="(max-width:768px)" href="mediastylel426-768.css" />
+    <link rel="stylesheet" type="text/css" media="(max-width:425px)" href="mediastyle376-425.css" />
+    <link rel="stylesheet" type="text/css" media="(max-width:375px)" href="mediastyle320-375.css" />
+    <link rel="stylesheet" type="text/css" media="(max-width:320px)" href="mediastyleless320.css" />-->
+    <script type="text/javascript" src="script_all.js"></script>
+    <!--jQuery scripts-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        //Igneous rocks dropdown information functions
+        $(document).ready(function () {
+            //introduction
+            $("#igneous_introbtn").click(function () {
+                $("#igneous_intro").slideToggle(500);
+                $("#andesiteinfo").hide();
+                $("#basaltinfo").hide();
+                $("#daciteinfo").hide();
+                $("#dioriteinfo").hide();
+                $("#gabbroinfo").hide();
+                $("#graniteinfo").hide();
+                $("#granodioriteinfo").hide();
+                $("#ignimbriteinfo").hide();
+                $("#peridotiteinfo").hide();
+                $("#rhyoliteinfo").hide();
+                $("#syeniteinfo").hide();
+                $("#trachyteinfo").hide();
+            });
+            //andesite
+            $("#andesitebtn").click(function () {
+                $("#igneous_intro").hide();
+                $("#andesiteinfo").slideToggle(500);
+                $("#basaltinfo").hide();
+                $("#daciteinfo").hide();
+                $("#dioriteinfo").hide();
+                $("#gabbroinfo").hide();
+                $("#graniteinfo").hide();
+                $("#granodioriteinfo").hide();
+                $("#ignimbriteinfo").hide();
+                $("#peridotiteinfo").hide();
+                $("#rhyoliteinfo").hide();
+                $("#syeniteinfo").hide();
+                $("#trachyteinfo").hide();
+            });
+            //basalt
+            $("#basaltbtn").click(function () {
+                $("#igneous_intro").hide();
+                $("#andesiteinfo").hide();
+                $("#basaltinfo").slideToggle(500);
+                $("#daciteinfo").hide();
+                $("#dioriteinfo").hide();
+                $("#gabbroinfo").hide();
+                $("#graniteinfo").hide();
+                $("#granodioriteinfo").hide();
+                $("#ignimbriteinfo").hide();
+                $("#peridotiteinfo").hide();
+                $("#rhyoliteinfo").hide();
+                $("#syeniteinfo").hide();
+                $("#trachyteinfo").hide();
+            });
+            //dacite
+            $("#dacitebtn").click(function () {
+                $("#igneous_intro").hide();
+                $("#andesiteinfo").hide();
+                $("#basaltinfo").hide();
+                $("#daciteinfo").slideToggle(500);
+                $("#dioriteinfo").hide();
+                $("#gabbroinfo").hide();
+                $("#graniteinfo").hide();
+                $("#granodioriteinfo").hide();
+                $("#ignimbriteinfo").hide();
+                $("#peridotiteinfo").hide();
+                $("#rhyoliteinfo").hide();
+                $("#syeniteinfo").hide();
+                $("#trachyteinfo").hide();
+            });
+            //diorite
+            $("#dioritebtn").click(function () {
+                $("#igneous_intro").hide();
+                $("#andesiteinfo").hide();
+                $("#basaltinfo").hide();
+                $("#daciteinfo").hide();
+                $("#dioriteinfo").slideToggle(500);
+                $("#gabbroinfo").hide();
+                $("#graniteinfo").hide();
+                $("#granodioriteinfo").hide();
+                $("#ignimbriteinfo").hide();
+                $("#peridotiteinfo").hide();
+                $("#rhyoliteinfo").hide();
+                $("#syeniteinfo").hide();
+                $("#trachyteinfo").hide();
+            });
+            //gabbro
+            $("#gabbrobtn").click(function () {
+                $("#igneous_intro").hide();
+                $("#andesiteinfo").hide();
+                $("#basaltinfo").hide();
+                $("#daciteinfo").hide();
+                $("#dioriteinfo").hide();
+                $("#gabbroinfo").slideToggle(500);
+                $("#graniteinfo").hide();
+                $("#granodioriteinfo").hide();
+                $("#ignimbriteinfo").hide();
+                $("#peridotiteinfo").hide();
+                $("#rhyoliteinfo").hide();
+                $("#syeniteinfo").hide();
+                $("#trachyteinfo").hide();
+            });
+            //granite
+            $("#granitebtn").click(function () {
+                $("#igneous_intro").hide();
+                $("#andesiteinfo").hide();
+                $("#basaltinfo").hide();
+                $("#daciteinfo").hide();
+                $("#dioriteinfo").hide();
+                $("#gabbroinfo").hide();
+                $("#graniteinfo").slideToggle(500);
+                $("#obsidianinfo").hide();
+                $("#ignimbriteinfo").hide();
+                $("#peridotiteinfo").hide();
+                $("#rhyoliteinfo").hide();
+                $("#syeniteinfo").hide();
+                $("#trachyteinfo").hide();
+            });
+            //granodiorite
+            $("#granodioritebtn").click(function () {
+                $("#igneous_intro").hide();
+                $("#andesiteinfo").hide();
+                $("#basaltinfo").hide();
+                $("#daciteinfo").hide();
+                $("#dioriteinfo").hide();
+                $("#gabbroinfo").hide();
+                $("#graniteinfo").hide();
+                $("#granodioriteinfo").slideToggle(500);
+                $("#ignimbriteinfo").hide();
+                $("#peridotiteinfo").hide();
+                $("#rhyoliteinfo").hide();
+                $("#syeniteinfo").hide();
+                $("#trachyteinfo").hide();
+            });
+            //ignimbrite
+            $("#ignimbritebtn").click(function () {
+                $("#igneous_intro").hide();
+                $("#andesiteinfo").hide();
+                $("#basaltinfo").hide();
+                $("#daciteinfo").hide();
+                $("#dioriteinfo").hide();
+                $("#gabbroinfo").hide();
+                $("#graniteinfo").hide();
+                $("#granodioriteinfo").hide();
+                $("#ignimbriteinfo").slideToggle(500);
+                $("#peridotiteinfo").hide();
+                $("#rhyoliteinfo").hide();
+                $("#syeniteinfo").hide();
+                $("#trachyteinfo").hide();
+            });
+            //peridotite
+            $("#peridotitebtn").click(function () {
+                $("#igneous_intro").hide();
+                $("#andesiteinfo").hide();
+                $("#basaltinfo").hide();
+                $("#daciteinfo").hide();
+                $("#dioriteinfo").hide();
+                $("#gabbroinfo").hide();
+                $("#graniteinfo").hide();
+                $("#granodioriteinfo").hide();
+                $("#ignimbriteinfo").hide();
+                $("#peridotiteinfo").slideToggle(500);
+                $("#rhyoliteinfo").hide();
+                $("#syeniteinfo").hide();
+                $("#trachyteinfo").hide();
+            });
+            //rhyolite
+            $("#rhyolitebtn").click(function () {
+                $("#igneous_intro").hide();
+                $("#andesiteinfo").hide();
+                $("#basaltinfo").hide();
+                $("#daciteinfo").hide();
+                $("#dioriteinfo").hide();
+                $("#gabbroinfo").hide();
+                $("#graniteinfo").hide();
+                $("#granodioriteinfo").hide();
+                $("#ignimbriteinfo").hide();
+                $("#peridotiteinfo").hide();
+                $("#rhyoliteinfo").slideToggle(500);
+                $("#syeniteinfo").hide();
+                $("#trachyteinfo").hide();
+            });
+            //syenite
+            $("#syenitebtn").click(function () {
+                $("#igneous_intro").hide();
+                $("#andesiteinfo").hide();
+                $("#basaltinfo").hide();
+                $("#daciteinfo").hide();
+                $("#dioriteinfo").hide();
+                $("#gabbroinfo").hide();
+                $("#graniteinfo").hide();
+                $("#granodioriteinfo").hide();
+                $("#ignimbriteinfo").hide();
+                $("#peridotiteinfo").hide();
+                $("#rhyoliteinfo").hide();
+                $("#syeniteinfo").slideToggle(500);
+                $("#trachyteinfo").hide();
+            });
+            //trachyte
+            $("#trachytebtn").click(function () {
+                $("#igneous_intro").hide();
+                $("#andesiteinfo").hide();
+                $("#basaltinfo").hide();
+                $("#daciteinfo").hide();
+                $("#dioriteinfo").hide();
+                $("#gabbroinfo").hide();
+                $("#graniteinfo").hide();
+                $("#granodioriteinfo").hide();
+                $("#ignimbriteinfo").hide();
+                $("#peridotiteinfo").hide();
+                $("#rhyoliteinfo").hide();
+                $("#syeniteinfo").hide();
+                $("#trachyteinfo").slideToggle(500);
+            });
+        });
+    </script>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="header_info">
+            <img id="GLlogo" class="GLlogo" src="Images/geology_headerlogo.jpg" onclick="window.location.href='Home.html'" alt="logo_cross-hammers" title="Geology Library - Home" />
+            <h1 class="h1GL">Geology Library</h1>
+            <button id="signin" class="signin" name="signin" onclick="showCredentials()">Sign In</button>
+            <img id="noticon" class="noticon" src="Images/icons/notification_icon.jpg" onclick="showNotifications()" />
+        </div>
+    </header>
+    <!--Navigation bar-->
+    <nav>
+        <a href="Home.html">Home</a>
+        <div class="dropdown_rocks">
+            <button class="dropbtn_rocks" onclick="window.location.href='Rocks.html'">Rocks</button>
+            <div class="dropdown-content_rocks">
+                <a href="Igneous_Rocks.html">Igneous Rocks</a>
+                <a href="Metamorphic_Rocks.html">Metamorphic Rocks</a>
+                <a href="Sedimentary_Rocks.html">Sedimentary Rocks</a>
+            </div>
+        </div>
+        <a href="Minerals.html">Minerals</a>
+        <a href="Periodic_Table.html">Periodic Table</a>
+        <a href="Contact_us.html">Contact us</a>
+        <a href="Registration.html">Register</a>
+        <div class="search-container">
+            <form action="action_page.php">
+                <div class="search-bar">
+                    <input class="search-fill-in" type="text" placeholder="Search.." name="search" />
+                    <input class="i-searchbtn" type="image" src="Images/icons/search_icon.jpg" name="i-searchbtn" onclick="" />
+                </div>
+            </form>
+        </div>
+    </nav>
+    <div class="GLcover">
+        <img class="GLcover" src="Images/geology_headercover.jpg" alt="valley_mountains" />
+    </div>
+    <!--Article-->
+    <article id="igneous_article" class="igneous_article">
+        <h2 id="igneousrocks_h" class="igneousrocks_h">Igneous Rocks</h2>        
+        <div class="xmligneousinfo">
+            <embed id="igneousembd" class="igneousembd" src="Igneous_Rocks.xml"/>
+        </div>
+        <div class="igneousinfo">
+            <!--Introduction-->
+            <button id="igneous_introbtn" class="igneousbtns" name="igneous_introbtn">Introduction</button>
+            <div id="igneous_intro" class="igneousinfodrop">
+                <p>
+                    Igneous rocks are formed by the solidification of magma, a silicate liquid generated
+                    by partial melting of the upper mantle or the lower crust.
+                    Different environments of formation, and the cooling rates associated with these,
+                    create very different textures and define the two major groupings within igneous rocks:
+                </p>
+                <p>
+                    <strong>Volcanic rocks</strong> form when magma rises to the surface and erupts,
+                    either as lava or pyroclastic material. The rate of cooling of the magma is rapid,
+                    and crystal growth is inhibited. Volcanic rocks are characteristically fine-grained.
+                    Volcanic rocks often exhibit structures caused by their eruption,
+                    e.g. flow banding (formed by shearing of the lava as it flows),
+                    and vesicles (open cavities that represent escaped gasses).
+                </p>
+                <p>
+                    <strong>Plutonic rocks</strong> form when magma cools within the Earth's crust.
+                    The rate of cooling of the magma is slow, allowing large crystals to grow.
+                    Plutonic rocks are characteristically coarse-grained.
+                </p>
+                <br />
+                <h3 id="igneous_textures" class="igneous_headers">Textures of Igneous rocks</h3>
+                <p>
+                    The environment of formation produces characteristic textures in igneous rocks which aid in their identification.
+                    These textures are:
+                </p>
+                <p>
+                    <em>Phaneritic</em> - This texture describes a rock with large, easily visible, interlocking crystals of several minerals.
+                    The crystals are randomly distributed and not aligned in any consistent direction.
+                    A phaneritic texture is developed by the slow cooling and crystallisation of magma trapped within the Earth's crust and is characteristic of plutonic rocks.
+                </p>
+                <p>
+                    <em>Porphyritic</em> - This texture describes a rock that has well-formed crystals visible to the naked eye,
+                    called phenocrysts, set in a very fine grained or glassy matrix, called the groundmass.
+                    A porphyritic texture is developed when magma that has been slowly cooling and crystallising within the Earth's crust is suddenly erupted at the surface,
+                    causing the remaining uncrystallised magma to cool rapidly.
+                    This texture is characteristic of most volcanic rocks.
+                </p>
+                <p>
+                    <em>Aphanitic</em> - This texture describes very fine grained rock where individual crystals can be seen only with the aid of a microscope, i.e. the rock is mostly groundmass.
+                    An aphanitic texture is developed when magma is erupted at the Earth's surface and cools too quickly for large crystals to grow.
+                    This texture is exhibited by some volcanic rocks.
+                </p>
+                <p>
+                    <em>Eutaxitic</em> (applies only to welded ignimbrites) -
+                    This texture describes a rock with a planar fabric in which flattened pumice clasts are surrounded by a fine grained groundmass of sintered ash.
+                    The flattened pumice clasts are lenticular (lens-shaped) in cross-section and are called fiamme (Italian for flame).
+                    An eutaxitic texture is developed when hot, pumice-rich material is erupted explosively and is then compressed by overlying material while still in a hot, plastic state.
+                </p>
+                <h3 id="igneous_otherfeats" class="igneous_headers">Other Features</h3>
+                <p>
+                    The chemical composition of the magma determines which minerals will form and in what proportions they will occur.
+                    Therefore, identification of the minerals present in the rock is an important step in being able to correctly identify the rock.
+                    Magmas that are relatively low in silica (SiO<sub>2</sub>) crystallise olivine, pyroxene (augite) and calcium-rich plagioclase,
+                    while magmas that are high in SiO<sub>2</sub> crystallise quartz, sodium-rich plagioclase, orthoclase, biotite and hornblende.
+                </p>
+                <p>
+                    As with minerals, igneous rocks can be broadly divided into mafic and felsic types.
+                    Mafic rocks are generally darker, and have higher abundances of mafic minerals.
+                    Felsic rocks are generally lighter in colour, having a higher concentration of felsic minerals.
+                </p>
+                <p>
+                    The following chart is a useful guide to identification of igneous rocks from their mineral composition:
+                    <img src="Images/rocks/igneous/igneous_chart.jpg" />
+                </p>
+            </div>
+            <!--Andesite-->
+            <button id="andesitebtn" class="igneousbtns" name="andesitebtn" onclick="showIgneous()">Andesite</button>
+            <div id="andesiteinfo" class="igneousinfodrop">
+                <table class="igneoustbl">
+                    <tr>
+                        <td>
+                            Andesite is an extrusive rock intermediate in composition between rhyolite and basalt.
+                            Andesite lava is of moderate viscosity and forms thick lava flows and domes.
+                            The word andesite is derived from the Andes Mountains in South America,
+                            where andesite is common. Andesite is the volcanic equivalent of diorite.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <img id="imgandesite1" class="imgigneous" src="Images/rocks/igneous/andesite1.jpg" />
+                                andesite
+                            </p>
+                            <p>
+                                <img id="imgandesite2" class="imgigneous" src="Images/rocks/igneous/andesite2.jpg" />
+                                andesite
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Group: </th>
+                        <td>Volcanic (Extrusive)</td>
+                    </tr>
+                    <tr>
+                        <th>Color: </th>
+                        <td>variable, but typically bluish-grey or grey (lighter coloured than basalt).</td>
+                    </tr>
+                    <tr>
+                        <th>Texture: </th>
+                        <td>porphyritic</td>
+                    </tr>
+                    <tr>
+                        <th>Mineral content</th>
+                        <td>
+                            groundmass generally of pyroxene (augite) and plagioclase,
+                            possibly with minor amounts of amphibole (hornblende) and glass;
+                            phenocrysts of plagioclase and often pyroxene, occasionally olivine or amphibole.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Silica (SiO<sub>2</sub>) content: </th>
+                        <td>52%-63%.</td>
+                    </tr>
+                    <tr>
+                        <th>Uses: </th>
+                        <td>
+                            can be used as aggregate, fill etc. in the construction
+                            and roading industries (often not ideal for concrete aggregate
+                            because of high silica content).
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--Basalt-->
+            <button id="basaltbtn" class="igneousbtns" name="basaltbtn" onclick="showIgneous()">Basalt</button>
+            <div id="basaltinfo" class="igneousinfodrop">
+                <table class="igneoustbl">
+                    <tr>
+                        <td>
+                            Basalt is a mafic extrusive rock, is the most widespread of all igneous rocks,
+                            and comprises more than 90% of all volcanic rocks.
+                            Because of its relatively low silica content, basalt lava has a comparatively low viscosity,
+                            and forms thin flows that can travel long distances.
+                            It is also found as intrusive dikes and sills.
+                            Many moon rocks brought back by Apollo astronauts are of basaltic composition.
+                            Basalt is the volcanic equivalent of gabbro.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <img id="imgbasalt1" class="imgigneous" src="Images/rocks/igneous/basalt1.jpg" />
+                                basalt
+                            </p>
+                            <p>
+                                <img id="imgbasalt2" class="imgigneous" src="Images/rocks/igneous/basalt2.jpg" />
+                                basalt
+                            </p>
+                            <p>
+                                <img id="imgbasat3" class="imgigneous" src="Images/rocks/igneous/basalt-olivine.jpg" />
+                                basalt with olivine
+                            </p>
+                            <p>
+                                <img id="imgbasalt4" class="imgigneous" src="Images/rocks/igneous/basalt-scoriaceous.jpg" />
+                                basalt (scoriaceous)
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Group: </th>
+                        <td>Volcanic (Extrusive)</td>
+                    </tr>
+                    <tr>
+                        <th>Color: </th>
+                        <td>dark grey to black.</td>
+                    </tr>
+                    <tr>
+                        <th>Texture: </th>
+                        <td>aphanitic (can be porphyritic).</td>
+                    </tr>
+                    <tr>
+                        <th>Mineral content</th>
+                        <td>
+                            groundmass generally of pyroxene (augite),
+                            plagioclase and olivine, possibly with minor glass;
+                            if porphyritic the phenocrysts will be any of olivine, pyroxene or plagioclase.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Silica (SiO<sub>2</sub>) content: </th>
+                        <td>45%-52%.</td>
+                    </tr>
+                    <tr>
+                        <th>Uses: </th>
+                        <td>
+                            aggregate, fill etc. in the construction and roading industries (best if olivine content is low);
+                            armour rock for seawalls; dimension stone, e.g. stone walls, curb stones, paving stones etc.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--Dacite-->
+            <button id="dacitebtn" class="igneousbtns" name="dacitebtn" onclick="showIgneous()">Dacite</button>
+            <div id="daciteinfo" class="igneousinfodrop">
+                <table class="igneoustbl">
+                    <tr>
+                        <td>
+                            Dacite is a felsic extrusive rock, intermediate in composition between andesite and rhyolite.
+                            It is often found associated with andesite, and forms lava flows, dikes,
+                            and, in some cases, massive intrusions in the centres of old volcanoes.
+                            Dacite is the volcanic equivalent of granodiorite.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <img id="imgdacite1" class="imgigneous" src="Images/rocks/igneous/dacite1.jpg" />
+                                dacite
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Group: </th>
+                        <td>Volcanic (Extrusive)</td>
+                    </tr>
+                    <tr>
+                        <th>Color: </th>
+                        <td>variable, but generally bluish-grey or pale grey.</td>
+                    </tr>
+                    <tr>
+                        <th>Texture: </th>
+                        <td>generally porphyritic.</td>
+                    </tr>
+                    <tr>
+                        <th>Mineral content</th>
+                        <td>
+                            groundmass generally of plagioclase with
+                            amphibole (hornblende), biotite, pyroxene (augite), quartz, and glass;
+                            phenocrysts of plagioclase, amphibole and often quartz.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Silica (SiO<sub>2</sub>) content: </th>
+                        <td>63%-69%.</td>
+                    </tr>
+                    <tr>
+                        <th>Uses: </th>
+                        <td>
+                            can be used as aggregate, fill etc.
+                            in the construction and roading industries
+                            (often not ideal for concrete aggregate
+                            because of high silica content).
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--Diorite-->
+            <button id="dioritebtn" class="igneousbtns" name="dioritebtn" onclick="showIgneous()">Diorite</button>
+            <div id="dioriteinfo" class="igneousinfodrop">
+                <table class="igneoustbl">
+                    <tr>
+                        <td>
+                            Diorite is an intrusive rock intermediate in composition between gabbro and granite.
+                            It is produced in volcanic arcs, and in mountain building where it can occur in large volumes as batholiths in the roots of mountains (e.g. Scotland, Norway).
+                            Because it is commonly speckled black and white, it is often referred to as "salt and pepper" rock.
+                            Diorite is the plutonic equivalent of andesite.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <img id="imgdiorite1" class="imgigneous" src="Images/rocks/igneous/diorite1.jpg" />
+                                diorite
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Group: </th>
+                        <td>Plutonic (Intrusive)</td>
+                    </tr>
+                    <tr>
+                        <th>Color: </th>
+                        <td>typically speckled black and white.</td>
+                    </tr>
+                    <tr>
+                        <th>Texture: </th>
+                        <td>phaneritic (medium to coarse grained).</td>
+                    </tr>
+                    <tr>
+                        <th>Mineral content</th>
+                        <td>plagioclase, amphibole (hornblende) and / or pyroxene (augite).</td>
+                    </tr>
+                    <tr>
+                        <th>Silica (SiO<sub>2</sub>) content: </th>
+                        <td>52%-63%.</td>
+                    </tr>
+                    <tr>
+                        <th>Uses: </th>
+                        <td>
+                            can be used as aggregate, fill etc.
+                            in the construction and roading industries
+                            (often not ideal for concrete aggregate because of high silica content);
+                            cut and polished for dimension stone for building facings, foyers etc.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--Gabbro-->
+            <button id="gabbrobtn" class="igneousbtns" name="gabbrobtn" onclick="showIgneous()">Gabbro</button>
+            <div id="gabbroinfo" class="igneousinfodrop">
+                <table class="igneoustbl">
+                    <tr>
+                        <td>
+                            Gabbro is a dense, mafic intrusive rock.
+                            It generally occurs as batholiths and laccoliths
+                            and is often found along mid-ocean ridges
+                            or in ancient mountains composed of compressed
+                            and uplifted oceanic crust.
+                            Gabbro is the plutonic equivalent of basalt.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <img id="imggabbro1" class="imgigneous" src="Images/rocks/igneous/gabbro1.jpg" />
+                                gabbro
+                            </p>
+                            <p>
+                                <img id="imggabbro2" class="imgigneous" src="Images/rocks/igneous/gabbro2.jpg" />
+                                gabbro
+                            </p>
+                            <p>
+                                <img id="imggabbro3" class="imgigneous" src="Images/rocks/igneous/gabbro3.jpg" />
+                                gabbro
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Group: </th>
+                        <td>Plutonic (Intrusive)</td>
+                    </tr>
+                    <tr>
+                        <th>Color: </th>
+                        <td>dark grey to black.</td>
+                    </tr>
+                    <tr>
+                        <th>Texture: </th>
+                        <td>phaneritic (medium to coarse grained).</td>
+                    </tr>
+                    <tr>
+                        <th>Mineral content</th>
+                        <td>predominantly plagioclase and pyroxene (augite) with lesser olivine.</td>
+                    </tr>
+                    <tr>
+                        <th>Silica (SiO<sub>2</sub>) content: </th>
+                        <td>45%-52%.</td>
+                    </tr>
+                    <tr>
+                        <th>Uses: </th>
+                        <td>
+                            as aggregate, fill etc. in the construction and roading industries;
+                            cut and polished for dimension stone (called black granite) for building facings, foyers etc.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--Granite-->
+            <button id="granitebtn" class="igneousbtns" name="granitebtn" onclick="showIgneous()">Granite</button>
+            <div id="graniteinfo" class="igneousinfodrop">
+                <table class="igneoustbl">
+                    <tr>
+                        <td>
+                            Granite is a felsic, generally equigranular, relatively light coloured intrusive rock.
+                            It comprises some of the oldest known rocks on Earth,
+                            and is the most abundant basement rock underlying the relatively thin sedimentary rock cover of the continents.
+                            Granite is produced in volcanic arcs, and more commonly in mountain building resulting from the collision of two continental masses.
+                            The earliest continental masses were products of the accumulation of volcanic arcs, and this is why granite lies in the cores of all of the continents.
+                            Granite is the plutonic equivalent of rhyolite.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <img id="imggranite1" class="imgigneous" src="Images/rocks/igneous/granite1.jpg" />
+                                granite
+                            </p>
+                            <p>
+                                <img id="imggranite2" class="imgigneous" src="Images/rocks/igneous/granite2.jpg" />
+                                granite (cut)
+                            </p>
+                            <p>
+                                <img id="imggranite3" class="imgigneous" src="Images/rocks/igneous/granite3.jpg" />
+                                granite (magnified)
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Group: </th>
+                        <td>Plutonic (Intrusive)</td>
+                    </tr>
+                    <tr>
+                        <th>Color: </th>
+                        <td>variable but typically light-coloured.</td>
+                    </tr>
+                    <tr>
+                        <th>Texture: </th>
+                        <td>phaneritic (medium to coarse grained).</td>
+                    </tr>
+                    <tr>
+                        <th>Mineral content</th>
+                        <td>
+                            orthoclase, plagioclase and quartz (generally more orthoclase than plagioclase),
+                            often with smaller amounts of biotite, muscovite or amphibole (hornblende).
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Silica (SiO<sub>2</sub>) content: </th>
+                        <td>69%-77%.</td>
+                    </tr>
+                    <tr>
+                        <th>Uses: </th>
+                        <td>
+                            can be used as aggregate, fill etc. in the construction and roading industries
+                            (often not ideal for concrete aggregate because of high silica content);
+                            cut and polished for dimension stone for building facings, foyers etc;
+                            cut and polished for bench tops and counters;
+                            cut and carved into monuments, headstones, statues etc.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--Granodiorite-->
+            <button id="granodioritebtn" class="igneousbtns" name="granodioritebtn" onclick="showIgneous()">Granodiorite</button>
+            <div id="granodioriteinfo" class="igneousinfodrop">
+                <table class="igneoustbl">
+                    <tr>
+                        <td>
+                            Granodiorite is an intrusive rock, intermediate in composition between diorite and granite.
+                            Although often similar in appearance to diorite or granite,
+                            it has a higher quartz content than diorite, and a higher mafic mineral content than granite.
+                            It is commonly produced in volcanic arcs, and in mountain building
+                            where it emplaces as large batholiths in mountain roots.
+                            Granodiorite is the plutonic equivalent of dacite.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <img id="imggranodiorite1" class="imgigneous" src="Images/rocks/igneous/granodiorite1.jpg" />
+                                granodiorite
+                            </p>
+                            <p>
+                                <img id="imggranodiorite2" class="imgigneous" src="Images/rocks/igneous/granodiorite2.jpg" />
+                                granodiorite
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Group: </th>
+                        <td>Plutonic (Intrusive)</td>
+                    </tr>
+                    <tr>
+                        <th>Color: </th>
+                        <td>variable but typically light-coloured.</td>
+                    </tr>
+                    <tr>
+                        <th>Texture: </th>
+                        <td>phaneritic (medium to coarse grained).</td>
+                    </tr>
+                    <tr>
+                        <th>Mineral content</th>
+                        <td>
+                            quartz, plagioclase, with lesser orthoclase, biotite
+                            (these separate it from diorite) and amphibole ( hornblende)
+                            (plagioclase always greater than 2/3 of total feldspar).
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Silica (SiO<sub>2</sub>) content: </th>
+                        <td>63%-69%.</td>
+                    </tr>
+                    <tr>
+                        <th>Uses: </th>
+                        <td>
+                            can be used as aggregate, fill etc. in the construction and roading industries
+                            (often not ideal for concrete aggregate because of high silica content);
+                            cut and polished for dimension stone for building facings, foyers etc.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--Ignimbrite-->
+            <button id="ignimbritebtn" class="igneousbtns" name="ignimbritebtn" onclick="showIgneous()">Ignimbrite</button>
+            <div id="ignimbriteinfo" class="igneousinfodrop">
+                <table class="igneoustbl">
+                    <tr>
+                        <td>
+                            Ignimbrite is a pumice-dominated pyroclastic flow deposit formed from the cooling of pyroclastic material ejected from an explosive volcanic eruption.
+                            As the pyroclastic material settles it can build up thick layers, and if the temperature is sufficiently high (> 535°C) it can weld into rock.
+                            The degree of welding depends on the weight of overlying material, so at the tops of such deposits the rock is commonly vesicular and of low density,
+                            while at depth the overlying weight crushes the pyroclastic material forming a dense, non-vesicular rock.
+                            While most volcanic rocks are found close to the eruptive source, ignimbrite of reasonable thickness can often be found tens to hundreds of kilometres from the site of eruption.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <img id="imgignimbrite1" class="imgigneous" src="Images/rocks/igneous/ignimbrite1.jpg" />
+                                ignimbrite (welded)
+                            </p>
+                            <p>
+                                <img id="imgignimbrite2" class="imgigneous" src="Images/rocks/igneous/ignimbrite2.jpg" />
+                                ignimbrite (poorly welded)
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Group: </th>
+                        <td>Volcanic (Extrusive)</td>
+                    </tr>
+                    <tr>
+                        <th>Color: </th>
+                        <td>variable, typically light-coloured (e.g. pinkish-white, pale grey etc).</td>
+                    </tr>
+                    <tr>
+                        <th>Texture: </th>
+                        <td>aphanitic if not welded, eutaxitic if welded.</td>
+                    </tr>
+                    <tr>
+                        <th>Mineral content</th>
+                        <td>
+                            pumice clasts in a fine grained glassy matrix, may contain lithic clasts and / or phenocrysts of varying composition.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Silica (SiO<sub>2</sub>) content: </th>
+                        <td>NA. </td>
+                    </tr>
+                    <tr>
+                        <th>Uses: </th>
+                        <td>
+                            building stone for decorative walls, paving etc.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--Peridotite-->
+            <button id="peridotitebtn" class="igneousbtns" name="peridotitebtn" onclick="showIgneous()">Peridotite (Dunite)</button>
+            <div id="peridotiteinfo" class="igneousinfodrop">
+                <table class="igneoustbl">
+                    <tr>
+                        <td>
+                            Peridotite is a very dense, coarse-grained, olivine-rich, ultra- mafic intrusive rock.
+                            It is noted for its low silica content, and contains very little or no feldspar ( orthoclase, plagioclase).
+                            It is a common component of oceanic lithosphere, and is derived from the upper mantle.
+                            It is found on land as part of oceanic crust sequences called ophiolites which have been thrust in or on to a continental mass, or as localised intrusions.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <img id="imgperidotite" class="imgigneous" src="Images/rocks/igneous/peridotite.jpg" />
+                                peridotite
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Group: </th>
+                        <td>Plutonic (Intrusive)</td>
+                    </tr>
+                    <tr>
+                        <th>Color: </th>
+                        <td>generally dark greenish-grey.</td>
+                    </tr>
+                    <tr>
+                        <th>Texture: </th>
+                        <td>phaneritic (coarse grained).</td>
+                    </tr>
+                    <tr>
+                        <th>Mineral content</th>
+                        <td>
+                            generally olivine with lesser pyroxene ( augite) (dunite is dominantly olivine),
+                            always contains some metallic minerals, e.g. chromite, magnetite.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Silica (SiO<sub>2</sub>) content: </th>
+                        <td> < 45%. </td>
+                    </tr>
+                    <tr>
+                        <th>Uses: </th>
+                        <td>
+                            as a source of valuable ores and minerals, including chromite, platinum, nickel and precious garnet;
+                            diamonds are obtained from mica-rich peridotite (kimberlite) in South Africa.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--Rhyolite-->
+            <button id="rhyolitebtn" class="igneousbtns" name="rhyolitebtn" onclick="showIgneous()">Rhyolite</button>
+            <div id="rhyoliteinfo" class="igneousinfodrop">
+                <table class="igneoustbl">
+                    <tr>
+                        <td>
+                            Rhyolite is a felsic extrusive rock.
+                            Due to the high silica content, rhyolite lava is very viscous.
+                            It flows slowly, like tooth paste squeezed out of a tube, and tends to pile up and form lava domes.
+                            If rhyolite magma is gas rich it can erupt explosively, forming a frothy solidified magma called pumice
+                            (a very lightweight, light-coloured, vesicular form of rhyolite) along with ash deposits, and / or ignimbrite.
+                            In certain situations extremely porous rhyolite lava flows may develop.
+                            The extreme porosity of such flows allows degassing and subsequent collapse of the flow, forming obsidian (dark coloured volcanic glass).
+                            Rhyolite is the volcanic equivalent of granite.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <img id="imgrhyolite1" class="imgigneous" src="Images/rocks/igneous/rhyolite1.jpg" />
+                                rhyolite
+                            </p>
+                            <p>
+                                <img id="imgrhyolite2" class="imgigneous" src="Images/rocks/igneous/rhyolite-obsidian.jpg" />
+                                rhyolite (obsidian)
+                            </p>
+                            <p>
+                                <img id="imgrhyolite3" class="imgigneous" src="Images/rocks/igneous/rhyolite3.jpg" />
+                                rhyolite
+                            </p>
+                            <p>
+                                <img id="imgrhyolite4" class="imgigneous" src="Images/rocks/igneous/rhyolite-pumice1.jpg" />
+                                rhyolite (pumice)
+                            </p>
+                            <p>
+                                <img id="imgrhyolite5" class="imgigneous" src="Images/rocks/igneous/rhyolite-pumice2.jpg" />
+                                rhyolite (pumice)
+                            </p>
+                            <p>
+                                <img id="imgrhyolite6" class="imgigneous" src="Images/rocks/igneous/rhyolite-flowbanded.jpg" />
+                                rhyolite (flow banded)
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Group: </th>
+                        <td>Volcanic (Extrusive)</td>
+                    </tr>
+                    <tr>
+                        <th>Color: </th>
+                        <td>variable, but light coloured.</td>
+                    </tr>
+                    <tr>
+                        <th>Texture: </th>
+                        <td>usually porphyritic, but can be aphanitic (e.g. obsidian).</td>
+                    </tr>
+                    <tr>
+                        <th>Mineral content</th>
+                        <td>
+                            groundmass generally of quartz and plagioclase,
+                            with lesser amounts of orthoclase, biotite, amphibole (augite),
+                            pyroxene (hornblende), and glass; phenocrysts of plagioclase and quartz,
+                            often with amphibole and / or biotite, sometimes orthoclase.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Silica (SiO<sub>2</sub>) content: </th>
+                        <td> 69%-77%. </td>
+                    </tr>
+                    <tr>
+                        <th>Uses: </th>
+                        <td>
+                            can be used as aggregate, fill etc. in the construction and roading industries
+                            (often not ideal for concrete aggregate because of high silica content);
+                            obsidian was used by pre-European Maori as a cutting tool, and can be carved into jewellery;
+                            pumice is used as an abrasive (especially in the cosmetic industry),
+                            and can also be incorporated into lightweight building materials.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--Syenite-->
+            <button id="syenitebtn" class="igneousbtns" name="syenitebtn" onclick="showIgneous()">Syenite</button>
+            <div id="syeniteinfo" class="igneousinfodrop">
+                <table class="igneoustbl">
+                    <tr>
+                        <td>
+                            Syenite is an intrusive rock, belonging to the alkali series of intermediate plutonic rocks.
+                            Alkali feldspar (e.g. orthoclase) is the major mineral component of syenite,
+                            total feldspar content is > 65%, and quartz is typically lacking.
+                            It is found in continental settings, and typically results from partial melting of the lower crust.
+                            Syenite is the plutonic equivalent of trachyte.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <img id="imgsyenite1" class="imgigneous" src="Images/rocks/igneous/syenite1.jpg" />
+                                syenite
+                            </p>
+                            <p>
+                                <img id="imgsyenite2" class="imgigneous" src="Images/rocks/igneous/syenite2.jpg" />
+                                syenite
+                            </p>
+                            <p>
+                                <img id="imgsyenite3" class="imgigneous" src="Images/rocks/igneous/syenite3.jpg" />
+                                syenite
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Group: </th>
+                        <td>Plutonic (Intrusive)</td>
+                    </tr>
+                    <tr>
+                        <th>Color: </th>
+                        <td>variable but typically light coloured.</td>
+                    </tr>
+                    <tr>
+                        <th>Texture: </th>
+                        <td>phaneritic (medium to coarse grained).</td>
+                    </tr>
+                    <tr>
+                        <th>Mineral content</th>
+                        <td>
+                            orthoclase, with lesser to minor plagioclase,
+                            minor mica, augite, hornblende, magnetite etc.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Silica (SiO<sub>2</sub>) content: </th>
+                        <td> 60%-65%. </td>
+                    </tr>
+                    <tr>
+                        <th>Uses: </th>
+                        <td>
+                            dimension stone for building facings,
+                            foyers etc (often preferred to granite due to its better fire-resistant qualities);
+                            can be used as aggregate in the building and roading industries.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--Trachyte-->
+            <button id="trachytebtn" class="igneousbtns" name="trachytebtn" onclick="showIgneous()">Trachyte</button>
+            <div id="trachyteinfo" class="igneousinfodrop">
+                <table class="igneoustbl">
+                    <tr>
+                        <td>
+                            Trachyte is an extrusive rock, belonging to the alkali series of intermediate volcanic rocks. 
+                            The major mineral component of trachyte is alkali feldspar (e.g. orthoclase), and it generally contains no quartz. 
+                            Trachyte often displays trachytic texture, where acicular to tabular feldspar phenocrysts align in one direction, suggestive of flow prior to cooling. 
+                            Trachyte lava is of moderate viscosity and forms thick lava flows and domes. 
+                            Two famous trachyte volcanoes are Mt Kilimanjaro (the highest mountain on the African continent), and Mt Erebus in Antarctica. 
+                            Trachyte is the volcanic equivalent of syenite.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <img id="imgtrachyte1" class="imgigneous" src="Images/rocks/igneous/trachyte1.jpg" />
+                                trachyte
+                            </p>
+                            <p>
+                                <img id="imgtrachyte2" class="imgigneous" src="Images/rocks/igneous/trachyte2.jpg" />
+                                trachyte
+                            </p>                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Group: </th>
+                        <td>Volcanic (Extrusive)</td>
+                    </tr>
+                    <tr>
+                        <th>Color: </th>
+                        <td>variable but often light coloured, generally light coloured phenocrysts.</td>
+                    </tr>
+                    <tr>
+                        <th>Texture: </th>
+                        <td>generally porphyritic (can be trachytic), sometimes aphanitic.</td>
+                    </tr>
+                    <tr>
+                        <th>Mineral content</th>
+                        <td>
+                            orthoclase phenocrysts in a groundmass of orthoclase with minor plagioclase, 
+                            biotite, hornblende, augite etc..
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Silica (SiO<sub>2</sub>) content: </th>
+                        <td> 60%-65%. </td>
+                    </tr>
+                    <tr>
+                        <th>Uses: </th>
+                        <td>
+                            building and paving stone; dimension stone for building facings, foyers etc.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </article>
+    <br />
+    <!--Footer-->
+    <footer>
+        <strong>&copy; Copyrights by Andreas Piniais</strong>
+        <br />
+        <strong>Email: <a id="footer_email" href="mailto:ap181844@students.euc.ac.cy" target="_top">Send Mail</a></strong>
+        <br />
+        <em>Created in Thursday 19-March-2020</em>
+        <br />
+        <small>Last updated at 21:30</small>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,259 @@
+﻿/* When the screen is between 321px and 375px wide,
+    stack the links and the search field vertically instead of horizontally */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+    /* Header Style */
+    .header_info 
+    {
+        position:static;
+        width:100%;
+        min-width:321px;
+        max-width:375px;
+    }
+
+    .GLlogo 
+    {
+        min-width: 20px;
+        max-width: 45px;
+        min-height: 10px;
+        max-height: 40px;
+    }
+
+    .GLlogo, .h1GL, .signin, .noticon {
+        display: inline-block;
+        position: relative;
+    }
+
+    .h1GL {
+        float: left;
+        position: static;
+        font-size: 15px;
+        font-size-adjust: 0.58;
+        text-align: left;
+    }
+
+
+    .noticon {
+        float: right;
+        width: 15px;
+        height: 15px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .signin 
+    {
+        float: right;
+        background-color: green;
+        color: white;
+        font-size: 10px;
+        border: 0;
+        padding: 2px;
+        min-width: 50px;
+        height: 15px;
+        cursor: pointer;
+    }
+
+    .date {
+        font-size: 8px;
+        float: right;
+    }
+    /************************/
+    .GLcover {
+        max-width: 375px;
+        min-width: 321px;
+        max-height: 150px;
+        min-height: 50px;
+    }
+    /*************************/
+
+    /* Navigation bar*/
+    nav {
+        overflow: hidden;
+        background-color: darkgreen;
+        font-family: Verdana;
+        max-width: 375px;
+        min-width: 320px;
+        width:100%;
+    }
+
+        /* Links inside the navigation bar */
+        nav a {
+            float: left;
+            font-size: 10px;
+            color: white;
+            text-align: center;
+            padding: 3px;
+            padding-top:6px;
+            text-decoration: none;
+            display: flex;
+        }
+
+    /* The dropdown container */
+    .dropdown_rocks {
+        float: left;
+        overflow: hidden;
+    }
+
+        /* Dropdown button */
+        .dropdown_rocks .dropbtn_rocks {
+            position: relative;
+            font-size: 10px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 1px;
+            background-color: inherit;
+            font-family: inherit; /* Important for vertical align on mobile phones */
+            margin: 0; /* Important for vertical align on mobile phones */
+        }
+
+        /* Add a red background color ot navigation bar links on hover */
+        nav a:hover, .dropdown_rocks:hover .dropbtn_rocks {
+            background-color: red;
+            cursor: pointer;
+        }
+
+    /* Dropdown content (hidden by default) */
+    .dropdown-content_rocks {
+        display: none;
+        position: absolute;
+        background-color: beige;
+        min-width: 80px;
+        box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+        /* Links inside the dropdown */
+        .dropdown-content_rocks a {
+            float: none;
+            color: black;
+            display: block;
+            text-align: left;
+        }
+
+            /* Add a grey background color to dropdown links on hover */
+            .dropdown-content_rocks a:hover {
+                background-color: lightgray;
+            }
+
+    /* Show the dropdown menu on hover */
+    .dropdown_rocks:hover .dropdown-content_rocks {
+        display: block;
+    }
+
+    #home, #rocks, #minerals, #contactus, #registrationform, .search-fill-in, .i-searchbtn {
+        display: inline-block;
+        position: static;
+    }
+    /* Style the search box inside the navigation bar */
+    nav .search-container {
+        float: right;
+        padding: 1px;
+        border: none;
+        margin-top: 1px;
+        margin-right: 2px;
+        font-size: 10px;
+    }
+
+    nav .i-searchbtn {
+        float: right;
+        padding: 3px;
+        margin-right: 6px;
+        background-color: darkgrey;
+        font-size: 10px;
+        border: none;
+        cursor: pointer;
+        width: 12px;
+        height: 12px;
+    }
+
+    .search-fill-in, .i-searchbtn {
+        display: inline-block;
+        position: static;
+        padding: 0px;
+    }
+}
+/****************************/
+/****** Home Page ******/
+
+
+/****************************/
+/****** Rocks Page ******/
+#igneousnav, #metanav, #sedinav
+{
+    font-size: 12px;
+}
+
+/********************************/
+/****** Igneous Rocks ******/
+.imgigneous:hover {
+    transform: scale(1.7), translateX(50%);
+}
+
+/********************************/
+
+/***************************/
+/****** Contact Us ******/
+.msgbox
+{
+    column-count:20;
+    -webkit-column-count: 20;
+}
+
+.submitbtn 
+{
+    width: 100%;
+    margin-left: 0px;
+}
+/**********************************/
+/****** Registration form ******/
+.gender, .dateofbirth, .username, .fname, .lname,
+.email1, .email2, .password1, .password2, .country,
+.signupupdates, .privacy {
+    font-size: 10px;
+}
+
+.usernamebox, .fnamebox, .lnamebox,
+.email1box, .email2box, .password1box, .password2box {
+    padding-right: 0px;
+    margin-left: 1px;
+    font-size: 10px;
+}
+
+.usernamebox 
+{
+    margin-right:18px;
+}
+
+.fnamebox 
+{
+    margin-right:17px;
+}
+
+.lnamebox 
+{
+    margin-right:18px;
+}
+
+.email1box 
+{
+    margin-right:40px;
+}
+
+.email2box 
+{
+    margin-right:24px;
+}
+
+.password1box 
+{
+    margin-right:29px;
+}
+
+.password2 {
+    margin-left:2px;
+}
+
+.passinfo {
+    font-size: 10px;
+}
