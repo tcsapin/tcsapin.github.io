@@ -193,7 +193,7 @@ nav .i-searchbtn {
 /****** Home page ******/
 /* Article */
 #home_article {
-    width: 60%;
+    width: 100%;
     padding-left: 20%;
     padding-right: 20%;
     text-align: center;
@@ -334,7 +334,7 @@ nav .i-searchbtn {
     background-color: beige;
     padding-left: 20%;
     padding-right: 20%;
-    width: 60%;
+    width: 100%;
 }
 
 .rocksnavall {
@@ -614,9 +614,6 @@ footer {
 
 .tm {
     font-size: 50%;
-}
-
-.footer_email {
 }
 
 /**/
