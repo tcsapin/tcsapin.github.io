@@ -1,0 +1,106 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+header{
+    padding: 1%;
+}
+
+#header_image{
+    height: 100px;
+}
+#header_title{
+    padding: 1%;
+}
+
+#header_image,#header_title{
+    display: inline-block;
+}
+
+/* Navigation bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    width: 100%;
+  }
+  
+nav li {
+    float: left;
+    border-right: 1px solid #bbb;
+  }
+
+nav li:last-child {
+    border-right: none;
+  }
+  
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+/* Change the link color to #111 (black) on hover */
+nav li a:hover {
+    background-color: #111;
+  }
+
+/* Image Slider */
+.mySlides {
+    padding: 1%;
+    display: none;
+    max-height: 500px;
+    height: 500px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+#dot_section{
+    position: relative;
+    left: 45%;
+}
+
+
+/* Description */
+#description_div{
+    padding: 1%;
+    background-color: rgb(47, 59, 228);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: white;
+    text-align: center;
+}
+
+#div_ul, #div_title {
+    display: inline-block;
+    text-align: left;
+    list-style-position: inside;
+}
+
+#android_pic, #web_pic{
+    height: 20px;
+}
+
+#web_pic{
+    color: white;
+}
+
+td {padding: 12px}
+
+/* Footer */
+footer {
+    float: right;
+    width: 100%;
+    background-color: grey;
+    color: white;
+    text-align: center;
+}
+
+
+
