@@ -16,6 +16,7 @@ header{
 
 #header_image,#header_title{
     display: inline-block;
+    position: relative;
 }
 
 /* Navigation bar */
@@ -39,7 +40,7 @@ nav li:last-child {
   }
   
 nav li a {
-    display: block;
+    display: inline-block;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -55,29 +56,48 @@ nav li a:hover {
 .mySlides {
     padding: 1%;
     display: none;
-    max-height: 500px;
-    height: 500px;
+    max-height: 400px;
+    height: 50%;
     width: 100%;
     border-radius: 20px;
 }
 
 #dot_section{
+    display: table;
+    position: relative;
+    left: 45%;
+    height: 100%;
+    width: 100%;
+}
+
+#dotBtn1,#dotBtn2{
+    display: inline-block;
     position: relative;
     left: 45%;
 }
 
+button{
+    border: none;
+    background: none;
+}
 
 /* Description */
-#description_div{
+#main_div{    
+    background-color: rgb(31, 32, 34);
+    color: white;
+    text-align: center;
+}
+
+#sub_div{
     padding: 1%;
-    background-color: rgb(47, 59, 228);
+    background-color: rgb(38, 94, 206);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     color: white;
     text-align: center;
 }
 
-#div_ul, #div_title {
+#main_div_title, #sub_div_ul  {    
     display: inline-block;
     text-align: left;
     list-style-position: inside;
@@ -91,6 +111,7 @@ nav li a:hover {
     color: white;
 }
 
+/* about */
 td {padding: 12px}
 
 /* Footer */

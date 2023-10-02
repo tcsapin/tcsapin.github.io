@@ -41,25 +41,22 @@
         <a href="./web/index.html">
             <img class="mySlides" src="./images/geology_library_feature_graphic.png" alt="Geology Library feature graphic">
         </a>
-      
-        <div class="w3-row-padding w3-section">
-          <div id="dot_section" class="w3-col s4">            
-            <button class="demo w3-opacity w3-hover-opacity-off" style="cursor:pointer" onclick="currentDiv(0)">•</button>
-            <button class="demo w3-opacity w3-hover-opacity-off" style="cursor:pointer" onclick="currentDiv(1)">•</button>
-          </div>
-        </div>          
+    
+        <button id="dotBtn1" class="demo w3-opacity w3-hover-opacity-off" style="cursor:pointer" onclick="currentDiv(0)">•</button>
+        <button id="dotBtn2" class="demo w3-opacity w3-hover-opacity-off" style="cursor:pointer" onclick="currentDiv(1)">•</button>
+        
     </div>
     <script type="text/javascript" src="./script_image_slider.js"></script>
     
     <!-- Write here your description text -->
-    <div id="description_div">
-        <h2 id="div_title">Recent projects:</h2>
-        <p>
-            <ul id="div_ul">
+    <div id="main_div">
+        <h2 id="main_div_title">Recent projects:</h2>
+        <div id="sub_div">
+            <ul id="sub_div_ul">
                 <li><a href="./android/RefugeeGuideCyprus/README.md">Refugee Guide Cyprus (android<img id="android_pic" src="./images/android.png">)</a></li>
                 <li><a href="./web/geologylibrary/index.html">Geology Library (web <img id="web_pic" src="./images/www.png">)</a></li>
             </ul>
-        </p>
+        </div>
     </div>
     <!-- Footer -->
     <footer>
