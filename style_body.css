@@ -1,7 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #0087e08c;
-    max-height: fit-content;
 }
 
 /* Header */
@@ -14,23 +13,19 @@ header{
     background-color: #0087e08c;
 }
 
+#anchor_header_image{
+    width: 100px;
+}
+
 #header_image{
     height: 100px;
-    max-width: fit-content;
-    width: 100%;
     cursor: pointer;
-    /* border: solid 1px rgba(0, 0, 0, 0.123); */
     border-radius: 20px;
     margin-bottom: 8px;
     background-color: rgba(0, 0, 0, 0.774);
 }
 #header_title{
     padding: 1%;
-}
-
-#header_image,#header_title{
-    display: block;
-    position: relative;
 }
 
 /* Menu Button */
