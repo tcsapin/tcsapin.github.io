@@ -9,7 +9,7 @@ function myFunction(x) {
 
     if (y.style.display === 'none') 
     {
-        y.style.display = 'inline-block';
+        y.style.display = 'block';
         
 
     } else {

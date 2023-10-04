@@ -10,6 +10,8 @@ header{
 
 #header_image{
     height: 100px;
+    max-width: fit-content;
+    width: 100%;
 }
 #header_title{
     padding: 1%;
@@ -44,7 +46,7 @@ header{
     /* border: solid 1px; */
     padding-left: 3px;
     padding-right: 3px;
-    background-color:#0086e0;
+    background-color:rgba(0, 0, 0, 0.568);
   }
   
   .bar1, .bar2, .bar3 {
@@ -68,58 +70,55 @@ header{
 
 /* Navigation bar */
 #navbar {
-    display:none;
+    display:block;
     width: 100%;
 }
 
-.navbar #navbar_list {
+#navbar_list {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.575);
     position: relative;
     width: 100%;
   }
   
-.navbar li {
-    float: left;
-    border-right: 1px solid #bbb;
+#navbar li {
+    /* float: left; */
+    border-bottom: 1px solid #bbb;
   }
 
-.navbar li:last-child {
+#navbar li:last-child {
     border-right: none;
   }
   
-.navbar li a {
-    display: inline-block;
+#navbar li a {
+    display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
+}
 
 /* Change the link color to #111 (black) on hover */
-.navbar li a:hover {
-    background-color: #111;
-  }
+#navbar li a:hover {
+    background-color: black;
+}
+
+#navbar li a:active {
+    background-color: black;
+}
+
 
 /* Image Slider */
 .mySlides {
     padding: 1%;
     display: none;
-    max-height: 400px;
+    max-width: fit-content;
     height: 50%;
     width: 100%;
     border-radius: 20px;
-}
-
-#dot_section{
-    display: table;
-    position: relative;
-    left: 45%;
-    height: 100%;
-    width: 100%;
 }
 
 #dotBtn1,#dotBtn2{
@@ -127,28 +126,26 @@ header{
     position: relative;
     left: 45%;
     cursor: pointer;
-    padding: 1%;
-}
-
-button{
     border: none;
-    background: none;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.021);
 }
 
 /* Description */
 #main_div{    
-    background-color: rgb(31, 32, 34);
+    background-color: #0000008e;
     color: white;
     text-align: center;
 }
 
 #sub_div{
     padding: 1%;
-    background-color: rgb(38, 94, 206);
+    background-color: rgba(0, 0, 0, 0.555);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     color: white;
     text-align: center;
+    height: 200px;
 }
 
 #main_div_title, #sub_div_ul  {    
@@ -156,6 +153,18 @@ button{
     text-align: left;
     list-style-position: inside;
 }
+
+.recent_projects{
+    list-style-type:circle;
+    padding-bottom: 2%;
+    border-bottom: solid 1px;
+}
+
+#item1_rec_projects, #item2_rec_projects
+{
+    text-decoration: none;
+}
+
 
 #android_pic, #web_pic{
     height: 20px;
@@ -170,11 +179,20 @@ td {padding: 12px}
 
 /* Footer */
 footer {
-    float: right;
-    width: 100%;
+    float: right;    
     background-color: grey;
     color: white;
     text-align: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+#footer_space{
+    height: 150px;
+    max-height: max-content;
 }
 
 

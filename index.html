@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="./style_navbar.css">
     <link rel="stylesheet" type="text/css" href="./style_footer.css">    
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>    
@@ -19,15 +20,16 @@
 <body>
     <!-- Header -->
     
-    <header>        
-        <img id="header_image" src="./images/id.png" alt="Andreas Piniais">
-        <h1 id="header_title">TCS Andreas Piniais</h1>
-        <!-- <div id="div_space"></div> -->
+    <header>
         <div class="container" onclick="myFunction(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </div>
+        <img id="header_image" src="./images/logo_tcsapin.png" alt="TCS Andreas Piniais">
+        <!-- <h1 id="header_title">TCS Andreas Piniais</h1> -->
+        <!-- <div id="div_space"></div> -->
+        
         <!-- <script type="text/javascript" src="./script.js"></script> -->
         <!-- <button id="btnMenu" style="cursor:pointer" onclick="showMenu(this)"><img id="imgMenu" src="./images/menu.png"></button> -->
     </header>
@@ -38,11 +40,11 @@
             <li class="navbar"><a href="./android/index.html">Android Applications</a></li>
             <li class="navbar"><a href="./web/index.html">Web Applications</a></li>
             <li class="navbar"><a href="./about.html">About</a></li>
-          </ul>          
+        </ul>          
     </nav>
     <script type="text/javascript" src="./script.js"></script>
     <!-- Image Slider -->
-    <div class="w3-content">
+    <div class="w3-content w3-padding">
         <a href="./android/index.html">
             <img class="mySlides" src="./images/Refugee_Guide_Cyprus_feature_graphic_landscape.png" alt="Refugee guide Cyprus feature graphic">
         </a>
@@ -50,8 +52,8 @@
             <img class="mySlides" src="./images/geology_library_feature_graphic.png" alt="Geology Library feature graphic">
         </a>
     
-        <button id="dotBtn1" class="demo w3-opacity w3-hover-opacity-off" onclick="currentDiv(0)">•</button>
-        <button id="dotBtn2" class="demo w3-opacity w3-hover-opacity-off" onclick="currentDiv(1)">•</button>
+        <button id="dotBtn1" class="demo w3-opacity w3-hover-opacity-off fa fa-circle" onclick="currentDiv(0)"></button>
+        <button id="dotBtn2" class="demo w3-opacity w3-hover-opacity-off fa fa-circle" onclick="currentDiv(1)"></button>
         
     </div>
     <script type="text/javascript" src="./script_image_slider.js"></script>
@@ -61,14 +63,20 @@
         <h2 id="main_div_title">Recent projects:</h2>
         <div id="sub_div">
             <ul id="sub_div_ul">
-                <li><a href="./android/RefugeeGuideCyprus/README.md">Refugee Guide Cyprus (android<img id="android_pic" src="./images/android.png">)</a></li>
-                <li><a href="./web/geologylibrary/index.html">Geology Library (web <img id="web_pic" src="./images/www.png">)</a></li>
+                <li class="recent_projects">
+                    <a id="item1_rec_projects" href="./android/RefugeeGuideCyprus/README.md">Refugee Guide Cyprus (android<img id="android_pic" src="./images/android.png">)
+                    </a>
+                </li>
+                <li class="recent_projects">
+                    <a id="item2_rec_projects" href="./web/geologylibrary/index.html">Geology Library (web <img id="web_pic" src="./images/www.png">)
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
     <!-- Footer -->
     <footer>
-        <p>&#9874; Developed by Andreas Piniais</p>
+        <p><a class="fa fa-html5">&#9874; Developed by Andreas Piniais</a></p>
         <p><a id="footer_email" class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-white" href="mailto:ap181844@students.euc.ac.cy"></a><a href="mailto:ap181844@students.euc.ac.cy">ap181844@students.euc.ac.cy</a></p>
         <p>
             Find me on social media:
@@ -79,6 +87,7 @@
             <a class="fa fa-twitter w3-hover-opacity" href="https://twitter.com/AndreasPiniais" target="_blank"></a>
             <a class="fa fa-linkedin w3-hover-opacity" href="https://www.linkedin.com/in/tkb-andreas/" target="_blank"></a>
         </p>
+        <div id="footer_space"></div>
     </footer>
 </body>
 </html>
