@@ -14,25 +14,33 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
 </head>    
 <!-- Body -->
 <body>
     <!-- Header -->
-    <header>
+    
+    <header>        
         <img id="header_image" src="./images/id.png" alt="Andreas Piniais">
         <h1 id="header_title">TCS Andreas Piniais</h1>
-        
+        <!-- <div id="div_space"></div> -->
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <!-- <script type="text/javascript" src="./script.js"></script> -->
+        <!-- <button id="btnMenu" style="cursor:pointer" onclick="showMenu(this)"><img id="imgMenu" src="./images/menu.png"></button> -->
     </header>
-    <!-- Navigation bar -->
-    <nav id="navbar">
+    <!-- Navigation bar -->    
+    <nav id="navbar" class="navbar" style="display: none;">
         <ul id="navbar_list">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./android/index.html">Android Applications</a></li>
-            <li><a href="./web/index.html">Web Applications</a></li>
-            <li><a href="./about.html">About</a></li>
+            <li class="navbar"><a href="./index.html">Home</a></li>
+            <li class="navbar"><a href="./android/index.html">Android Applications</a></li>
+            <li class="navbar"><a href="./web/index.html">Web Applications</a></li>
+            <li class="navbar"><a href="./about.html">About</a></li>
           </ul>          
     </nav>
+    <script type="text/javascript" src="./script.js"></script>
     <!-- Image Slider -->
     <div class="w3-content">
         <a href="./android/index.html">
@@ -42,8 +50,8 @@
             <img class="mySlides" src="./images/geology_library_feature_graphic.png" alt="Geology Library feature graphic">
         </a>
     
-        <button id="dotBtn1" class="demo w3-opacity w3-hover-opacity-off" style="cursor:pointer" onclick="currentDiv(0)">•</button>
-        <button id="dotBtn2" class="demo w3-opacity w3-hover-opacity-off" style="cursor:pointer" onclick="currentDiv(1)">•</button>
+        <button id="dotBtn1" class="demo w3-opacity w3-hover-opacity-off" onclick="currentDiv(0)">•</button>
+        <button id="dotBtn2" class="demo w3-opacity w3-hover-opacity-off" onclick="currentDiv(1)">•</button>
         
     </div>
     <script type="text/javascript" src="./script_image_slider.js"></script>
