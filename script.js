@@ -4,15 +4,15 @@ function myFunction(x) {
     
     x.classList.toggle("change");
 
-    // var y = document.getElementById("navbar");
     var y = document.getElementById('navbar');
+    var z = document.defaultView.getComputedStyle(y);
 
-    if (y.style.display === 'none') 
+    if (z.display.match('none')) // or display === 'none'
     {
-        y.style.display = 'block';
-        
+        y.style.display = 'block';        
 
     } else {
+
         y.style.display = 'none';
 
     }

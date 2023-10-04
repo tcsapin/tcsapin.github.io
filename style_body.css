@@ -1,11 +1,17 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #0087e08c;
+    max-height: fit-content;
 }
 
 /* Header */
 header{
     padding: 1%;
+    background-color: #0087e08c;
+}
+
+#div_header_aux{
+    background-color: #0087e08c;
 }
 
 #header_image{
@@ -13,68 +19,52 @@ header{
     max-width: fit-content;
     width: 100%;
     cursor: pointer;
-    border: solid 1px rgba(0, 0, 0, 0.123);
+    /* border: solid 1px rgba(0, 0, 0, 0.123); */
     border-radius: 20px;
     margin-bottom: 8px;
+    background-color: rgba(0, 0, 0, 0.774);
 }
 #header_title{
     padding: 1%;
 }
 
-#header_image,#header_title, #div_space, #btnMenu{
+#header_image,#header_title{
     display: block;
     position: relative;
 }
 
-#btnMenu{
-    right: 0%;
-}
-
-#div_space{
-    width: 91%;
-}
-#btnMenu{
-    height: 48px;
-    width: 48px;
-}
-#imgMenu{
-    position: relative;
-    height: 40px;
-    width: 40px;
-}
 /* Menu Button */
 .container {
     display: inline-block;
     cursor: pointer;
-    border-radius: 2px;
+    border-radius: 10px;
     /* border: solid 1px; */
-    padding-left: 3px;
-    padding-right: 3px;
-    background-color:rgba(0, 0, 0, 0.568);
+    padding: 2px;
+    background-color:rgba(0, 0, 0, 0.555);
   }
   
   .bar1, .bar2, .bar3 {
-    width: 30px;
-    height: 3px;
+    width: 40px;
+    height: 4px;
     background-color: white;
-    margin: 6px 0;
+    margin: 8px;
     transition: 0.4s;
     border-radius: 20px;
   }
   
   .change .bar1 {
-    transform: translate(0, 9px) rotate(-45deg);
+    transform: translate(0, 12px) rotate(-45deg);
   }
   
   .change .bar2 {opacity: 0;}
   
   .change .bar3 {
-    transform: translate(0, -9px) rotate(45deg);
+    transform: translate(0, -12px) rotate(45deg);
   }
 
 /* Navigation bar */
 #navbar {
-    display:block;
+    display:none;
     width: 100%;
 }
 
@@ -83,7 +73,7 @@ header{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.575);
+    background-color: rgba(0, 0, 0, 0.700);
     position: relative;
     width: 100%;
   }
@@ -136,15 +126,15 @@ header{
 }
 
 /* Description */
-#main_div{    
-    background-color: #0000008e;
+#main_div{
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     text-align: center;
 }
 
 #sub_div{
     padding: 1%;
-    background-color: rgba(0, 0, 0, 0.555);
+    background-color: rgba(0, 0, 0, 0.3);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     color: white;
@@ -152,25 +142,62 @@ header{
     height: 200px;
 }
 
-#main_div_title, #sub_div_ul  {    
+#main_div_title, #main_list  {    
     display: inline-block;
     text-align: left;
-    list-style-position: inside;
+}
+
+#sub_list{
+    list-style-type:disc;
 }
 
 .recent_projects{
-    list-style-type:circle;
-    padding-bottom: 2%;
+    margin: 8px;
+    padding-bottom: 8px;
     border-bottom: solid 1px;
 }
 
-#item1_rec_projects, #item2_rec_projects
+#item1a_rec_projects, #item1b_rec_projects,
+#item2a_rec_projects, #item2b_rec_projects
 {
     text-decoration: none;
+    border-bottom: solid 1px;
 }
 
+.android_projects{
+    margin: 8px;
+    padding-bottom: 8px;
+    border-bottom: solid 1px;
+}
 
-#android_pic, #web_pic{
+.android_project1{
+    margin-bottom: 8px;
+}
+
+#item1a_android_projects, #item1b_android_projects
+{
+    text-decoration: none;
+    border-bottom: solid 1px;
+}
+
+.web_projects{
+    margin: 8px;
+    padding-bottom: 8px;
+    border-bottom: solid 1px;
+}
+
+.web_project1{
+    margin-bottom: 8px;
+}
+
+#item1a_web_projects, #item1b_web_projects
+{
+    text-decoration: none;
+    border-bottom: solid 1px;
+}
+
+#android_pic, #web_pic, 
+#github_pic, #google_play_pic{
     height: 20px;
 }
 
@@ -189,14 +216,7 @@ footer {
     text-align: center;
     width: 100%;
     height: 100%;
-
-}
-
-
-
-#footer_space{
-    height: 150px;
-    max-height: max-content;
+    position: absolute;
 }
 
 

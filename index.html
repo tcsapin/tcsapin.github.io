@@ -18,24 +18,18 @@
 </head>    
 <!-- Body -->
 <body>
-    <!-- Header -->
-    
+    <!-- Header -->    
     <header>
-        <a href="./index.html"><img id="header_image" src="./images/logo_tcsapin.png" alt="TCS Andreas Piniais"></a>
+        <a href="./index.html"><img id="header_image" src="./images/logo_tcsapin_3d.png" alt="TCS Andreas Piniais"></a>
         <div class="container" onclick="myFunction(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </div>
-        
-        <!-- <h1 id="header_title">TCS Andreas Piniais</h1> -->
-        <!-- <div id="div_space"></div> -->
-        
-        <!-- <script type="text/javascript" src="./script.js"></script> -->
-        <!-- <button id="btnMenu" style="cursor:pointer" onclick="showMenu(this)"><img id="imgMenu" src="./images/menu.png"></button> -->
     </header>
+
     <!-- Navigation bar -->    
-    <nav id="navbar" class="navbar" style="display: none;">
+    <nav id="navbar" class="navbar">
         <ul id="navbar_list">
             <li class="navbar"><a href="./index.html">Home</a></li>
             <li class="navbar"><a href="./android/index.html">Android Applications</a></li>
@@ -63,13 +57,25 @@
     <div id="main_div">
         <h2 id="main_div_title">Recent projects:</h2>
         <div id="sub_div">
-            <ul id="sub_div_ul">
+            <ul id="main_list">
                 <li class="recent_projects">
-                    <a id="item1_rec_projects" href="./android/RefugeeGuideCyprus/README.md">Refugee Guide Cyprus (android<img id="android_pic" src="./images/android.png">)
+                    <img id="android_pic" src="./images/android.png">
+                    Refugee Guide Cyprus: 
+                    <a id="item1a_rec_projects" href="https://play.google.com/store/apps/details?id=cy.euc.dcs.sp.refugeeguidecyprus">
+                        (<img id="android_pic" src="./images/google-play.png"> Google Play)
+                    </a>/
+                    <a id="item1b_rec_projects" href="./android/RefugeeGuideCyprus/">
+                        (<img id="github_pic" src="./images/github.png"> GitHub Files Code)
                     </a>
                 </li>
                 <li class="recent_projects">
-                    <a id="item2_rec_projects" href="./web/geologylibrary/index.html">Geology Library (web <img id="web_pic" src="./images/www.png">)
+                    <img id="web_pic" src="./images/www.png">
+                    Geology Library:
+                    <a id="item2a_rec_projects" href="./web/geologylibrary/index.html">
+                        (Web)
+                    </a> / 
+                    <a id="item2b_rec_projects" href="https://github.com/tcsapin/tcsapin.github.io/tree/main/web/geologylibrary">
+                        (<img id="github_pic" src="./images/github.png"> Github Files Code)
                     </a>
                 </li>
             </ul>
@@ -93,7 +99,6 @@
             <a class="fa fa-twitter w3-hover-opacity w3-margin-right w3-xlarge" href="https://twitter.com/AndreasPiniais" target="_blank"></a>
             <a class="fa fa-linkedin w3-hover-opacity w3-margin-right w3-xlarge" href="https://www.linkedin.com/in/tkb-andreas/" target="_blank"></a>
         </p>
-        <div id="footer_space"></div>
     </footer>
 </body>
 </html>

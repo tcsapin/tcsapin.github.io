@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" name="viewport" content="device-width, initial-scale=1.0" />
     <title>TCS Andreas Piniais Website</title>
-    <link rel="icon" type="image/jpg" href="../images/tcsapin.png" />
+    <link rel="icon" type="image/jpg" href="../images/logo_tcsapin.png" />
     <link rel="stylesheet" type="text/css" href="../style.css" />
     <link rel="stylesheet" type="text/css" href="../style_body.css">
     <link rel="stylesheet" type="text/css" href="../style_header.css">
@@ -18,7 +18,7 @@
 <body>
     <!-- Header -->
     <header>
-        <h1 id="header_title">TCS Andreas Piniais</h1>
+        <a href="../index.html"><img id="header_image" src="../images/logo_tcsapin_3d.png" alt="TCS Andreas Piniais"></a>
         <div class="container" onclick="myFunction(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
@@ -40,23 +40,42 @@
         <img id="android_pic" src="../images/android.png" style="height: 40px;">
         <h2 id="main_div_title">Android Applications:</h2>
         <div id="sub_div">
-            <ol id="sub_div_ul">
-                <li><a href="https://github.com/tcsapin/tcsapin.github.io/tree/main/android/RefugeeGuideCyprus">Refugee Guide Cyprus</a></li>
+            <ol id="main_list">
+                <li class="android_projects">
+                    Refugee Guide Cyprus:
+                    <ul id="sub_list">
+                        <li class="android_project1">
+                            <a id="item1a_android_projects" href="https://play.google.com/store/apps/details?id=cy.euc.dcs.sp.refugeeguidecyprus">
+                                (<img id="google_play_pic" src="../images/google-play.png"> Google Play)
+                            </a>
+                        </li>
+                        <li class="android_project1">
+                            <a id="item1b_android_projects" href="./android/RefugeeGuideCyprus/">
+                                (<img id="github_pic" src="../images/github.png"> GitHub Files Code)
+                            </a>
+                        </li>
+                    </ul>                    
+                </li>
             </ol>
         </p>
     </div>
     <!-- Footer -->
     <footer>
-        <p>&#9874; Developed by Andreas Piniais</p>
-        <p><a id="footer_email" class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text" href="mailto:ap181844@students.euc.ac.cy"></a><a href="mailto:ap181844@students.euc.ac.cy">ap181844@students.euc.ac.cy</a></p>
+        <p><a class="fa fa-code w3-large w3-text-white "> Developed by Andreas Piniais</a></p>
+        <p>
+            <a id="footer_email" class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-white" href="mailto:ap181844@students.euc.ac.cy"></a>
+            <a href="mailto:ap181844@students.euc.ac.cy">ap181844@students.euc.ac.cy</a>
+        </p>
         <p>
             Find me on social media:
-            <a class="fa fa-facebook-official w3-hover-opacity" href="https://www.facebook.com/tkb.andreas" target="_blank"></a>
-            <!-- <a class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/tkb.andreas/" target="_blank"></a> -->
-            <!-- <a class="fa fa-snapchat w3-hover-opacity" href="https://www.facebook.com/tkb.andreas" target="_blank"></a> -->
-            <!-- <a class="fa fa-pinterest-p w3-hover-opacity" href="https://www.facebook.com/tkb.andreas" target="_blank"></a> -->
-            <a class="fa fa-twitter w3-hover-opacity" href="https://twitter.com/AndreasPiniais" target="_blank"></a>
-            <a class="fa fa-linkedin w3-hover-opacity" href="https://www.linkedin.com/in/tkb-andreas/" target="_blank"></a>
+        </p>
+        <p>
+            <a class="fa fa-facebook-official w3-hover-opacity w3-margin-right w3-xlarge" href="https://www.facebook.com/tkb.andreas" target="_blank"></a>
+            <!-- <a class="fa fa-instagram w3-hover-opacity w3-margin-right w3-large" href="https://www.instagram.com/tkb.andreas/" target="_blank"></a> -->
+            <!-- <a class="fa fa-snapchat w3-hover-opacity w3-margin-right w3-large" href="https://www.facebook.com/tkb.andreas" target="_blank"></a> -->
+            <!-- <a class="fa fa-pinterest-p w3-hover-opacity w3-margin-right w3-large" href="https://www.facebook.com/tkb.andreas" target="_blank"></a> -->
+            <a class="fa fa-twitter w3-hover-opacity w3-margin-right w3-xlarge" href="https://twitter.com/AndreasPiniais" target="_blank"></a>
+            <a class="fa fa-linkedin w3-hover-opacity w3-margin-right w3-xlarge" href="https://www.linkedin.com/in/tkb-andreas/" target="_blank"></a>
         </p>
     </footer>
 </body>
