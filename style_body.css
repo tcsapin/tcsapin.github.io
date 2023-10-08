@@ -180,6 +180,7 @@ header{
     background-color: #000;
     border-radius: 5px;
     padding-left: 10px;
+    padding-top: 10px;
 
 }
 
@@ -226,6 +227,7 @@ header{
 
 .app_link:active{
     background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 #android_image, #web_image, 
@@ -244,9 +246,14 @@ header{
     border-radius: 10px;
     cursor: pointer;
 }
-button{
+
+/* .btn_app_link:hover{
     cursor: pointer;
 }
+
+.btn_app_link:active{
+    cursor: pointer;
+} */
 /* about */
 td {padding: 12px}
 
