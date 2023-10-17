@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #0087e08c;
+    background-color: rgba(0, 135, 224, 0.549);
 }
 
 /* Header */
@@ -11,10 +11,12 @@ header{
 
 #div_header_aux{
     background-color: #0087e08c;
+    
 }
 
 #anchor_header_image{
     width: 100px;
+    
 }
 
 #header_image{
@@ -23,7 +25,12 @@ header{
     border-radius: 20px;
     margin-bottom: 8px;
     background-color: rgba(0, 0, 0, 0.774);
+    
 }
+#header_image:hover{
+    box-shadow: #bbb 1px 1px 1px 1px;
+}
+
 #header_title{
     padding: 1%;
 }
@@ -145,15 +152,11 @@ header{
 }
 
 #main_list  {    
-    /* display: inline-block; */
+    display: inline-block;
     text-align: left;
     padding-top: 8px;
     padding-bottom: 8px;
-
-}
-
-#sub_list{
-    list-style-type:disc;
+    list-style-type: none;
 }
 
 /* home recent apps */
@@ -163,31 +166,15 @@ header{
     border-bottom: solid 1px;
 }
 
-#item1a_rec_projects, #item1b_rec_projects,
-#item2a_rec_projects, #item2b_rec_projects
+.recent_projects > .recent_projects_links
 {
     text-decoration: none;
     border-bottom: solid 1px;
 }
 
 .list_item{
-    list-style: none;
-    list-style-position: inside;
-}
-
-.list_item::before{    
-    content: counter(list-item)"\a0\a0";
-    background-color: #000;
-    border-radius: 5px;
-    padding-left: 10px;
-    padding-top: 10px;
-
-}
-
-/* android and web*/
-.app_in_list{
     display: inline-block;
-    list-style-position: inside;
+    counter-increment: list-item 1;
     background-color: rgba(0, 0, 0, 0.274);
     border-radius: 10px;
     border: #bbb 1px;
@@ -196,10 +183,59 @@ header{
     padding: 8px;
     margin-top: 8px;
     margin-right: 8px;
+    text-decoration: none;
 }
 
+.list_item:hover{
+    background-color: rgba(0, 135, 224, 0.549);
+    box-shadow: rgb(0, 0, 0) 2pt 2pt 2pt 2pt;
+}
+
+.list_item::before{
+    content: counter(list-item)"\a0\a0";
+    /* counter-increment: list-item 1; */
+    background-color: #000;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+
+}
+
+.app_in_list{
+    display: block;
+    /* counter-increment: list-item 1; */
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    /* border: #bbb 1px; */
+    /* border-style: solid; */
+    border-top: #bbb solid 1px;
+    border-bottom: #bbb solid 1px;
+    /* max-width: fit-content; */
+    padding: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    /* margin-right: 8px; */
+    text-decoration: none;
+}
+
+/* .app_in_list:hover{
+    background-color: rgba(0, 0, 0, 0.808);
+    box-shadow: rgb(0, 0, 0) 2pt 2pt 2pt 2pt;
+} */
+
+/* .app_in_list::before{
+    content: counter(list-item)"\a0\a0";
+    counter-increment: list-item 1;
+    background-color: #000;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+
+} */
+
 .app_in_list_title{
-    margin: auto;
+    display: block;
+    margin: auto ;
     text-align: center;
 }
 
@@ -215,14 +251,18 @@ header{
 }
 
 .app_link{
+    display: inline-block;
     cursor: pointer;
     text-decoration: none;
-    /* min-height: 48px;
+    width: fit-content;
     border-radius: 10px;
-    margin: 1%;
-    padding: 1%;
+    margin: 4px auto;
+    padding: 4px;
+    background-color: black;
+}
+
+.app_link:hover{
     box-shadow: gray 1px 1px 1px 1px;
-    background-color: black; */
 }
 
 .app_link:active{
@@ -241,19 +281,22 @@ header{
 }
 
 .btn_app_link{
-    background-color: rgba(0, 0, 0, 0.473);
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
     color: white;
     border-radius: 10px;
     cursor: pointer;
 }
 
-/* .btn_app_link:hover{
+.btn_app_link:hover{
+    /* background-color: rgba(0, 135, 224, 0.549); */
     cursor: pointer;
 }
 
 .btn_app_link:active{
     cursor: pointer;
-} */
+}
+
 /* about */
 td {padding: 12px}
 
