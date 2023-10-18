@@ -9,7 +9,7 @@ function myFunction(x) {
 
     if (z.display.match('none')) // or display === 'none'
     {
-        y.style.display = 'block';        
+        y.style.display = 'flex';        
 
     } else {
 

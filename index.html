@@ -19,26 +19,35 @@
 <body>
     <!-- Header -->    
     <header>
-        <div id="header_name">
-            <a id="anchor_header_image" href="./index.html"><img id="header_image" src="./images/logo_tcsapin_3d.png" alt="TCS Andreas Piniais"></a>
+        <div id="header_first_row" class="header">
+            <!-- Menu button -->
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>            
+            <!-- Logo -->
+            <div id="logo">
+                <a id="anchor_header_image" href="./index.html">
+                    <!-- <h1 id="header_image">TCSAPin</h1> -->
+                    <img id="header_image" src="./images/logo_tcsapin_3d.png" alt="TCS Andreas Piniais">
+                </a>
+            </div>
         </div>
-        <div class="container" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+        <div id="header_second_row" class="header">
+            <!-- Navigation bar -->
+            <div id="navbar" class="navbar">
+                <ul id="navbar_list">
+                    <li class="navbar"><a href="./index.html">Home</a></li>
+                    <li class="navbar"><a href="./android/index.html">Android Applications</a></li>
+                    <li class="navbar"><a href="./web/index.html">Web Applications</a></li>
+                    <li class="navbar"><a href="./about.html">About</a></li>
+                </ul>          
+            </div>
+            <script type="text/javascript" src="./script.js"></script>
         </div>
     </header>
-
-    <!-- Navigation bar -->    
-    <nav id="navbar" class="navbar">
-        <ul id="navbar_list">
-            <li class="navbar"><a href="./index.html">Home</a></li>
-            <li class="navbar"><a href="./android/index.html">Android Applications</a></li>
-            <li class="navbar"><a href="./web/index.html">Web Applications</a></li>
-            <li class="navbar"><a href="./about.html">About</a></li>
-        </ul>          
-    </nav>
-    <script type="text/javascript" src="./script.js"></script>
+    
     <!-- Image Slider -->
     <div class="w3-content w3-padding">
         <a href="./android/index.html">
