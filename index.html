@@ -19,96 +19,97 @@
 <body>
     <!-- Header -->    
     <header>
-        <div id="header_first_row" class="header">
+        <div id="header" class="header">
+            <!-- Logo -->
+            <div id="header_logo">
+                <a id="header_logo_link" href="./index.html">
+                    <h1 id="header_title">TCSAPin</h1>
+                    <!-- <img id="header_image" src="./images/logo_tcsapin_3d.png" alt="TCS Andreas Piniais"> -->
+                </a>
+            </div>
             <!-- Menu button -->
-            <div class="container" onclick="myFunction(this)">
+            <div class="menu_button" onclick="myFunction(this)">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
-            </div>            
-            <!-- Logo -->
-            <div id="logo">
-                <a id="anchor_header_image" href="./index.html">
-                    <!-- <h1 id="header_image">TCSAPin</h1> -->
-                    <img id="header_image" src="./images/logo_tcsapin_3d.png" alt="TCS Andreas Piniais">
-                </a>
             </div>
-        </div>
-        <div id="header_second_row" class="header">
             <!-- Navigation bar -->
             <div id="navbar" class="navbar">
                 <ul id="navbar_list">
                     <li class="navbar"><a href="./index.html">Home</a></li>
-                    <li class="navbar"><a href="./android/index.html">Android Applications</a></li>
-                    <li class="navbar"><a href="./web/index.html">Web Applications</a></li>
                     <li class="navbar"><a href="./about.html">About</a></li>
+                    <li class="navbar"><a href="./android/index.html">Android Applications</a></li>
+                    <li class="navbar"><a href="./web/index.html">Web Applications</a></li>                    
                 </ul>          
             </div>
             <script type="text/javascript" src="./script.js"></script>
         </div>
     </header>
-    
-    <!-- Image Slider -->
-    <div class="w3-content w3-padding">
-        <a href="./android/index.html">
-            <img class="mySlides" src="./images/Refugee_Guide_Cyprus_feature_graphic_landscape.png" alt="Refugee guide Cyprus feature graphic">
-        </a>
-        <a href="./web/index.html">
-            <img class="mySlides" src="./images/geology_library_feature_graphic.png" alt="Geology Library feature graphic">
-        </a>
-    
-        <button id="dotBtn1" type="button" class="demo w3-opacity w3-hover-opacity-off fa fa-circle" onclick="currentDiv(0)"></button>
-        <button id="dotBtn2" type="button" class="demo w3-opacity w3-hover-opacity-off fa fa-circle" onclick="currentDiv(1)"></button>
+    <div id="main_body">
+        <!-- Image Slider -->    
+        <div id="div_image_slider" class="w3-content w3-padding-16">
+            <a href="./android/index.html">
+                <img class="mySlides" src="./images/Refugee_Guide_Cyprus_feature_graphic_landscape.png" alt="Refugee guide Cyprus feature graphic">
+            </a>
+            <a href="./web/index.html">
+                <img class="mySlides" src="./images/geology_library_feature_graphic.png" alt="Geology Library feature graphic">
+            </a>
         
-    </div>
-    <script type="text/javascript" src="./script_image_slider.js"></script>
-    
-    <!-- Write here your description text -->
-    <div id="main_div">
-        <h2 id="main_div_title">Recent projects:</h2>
-        <div id="sub_div">
-            <ul id="main_list">
-                <li class="recent_projects">
-                    <img id="android_image" title="android image" src="./images/logo_Android.png">
-                    Refugee Guide Cyprus: 
-                    <a id="item1a_rec_projects" class="recent_projects_links" href="https://play.google.com/store/apps/details?id=cy.euc.dcs.sp.refugeeguidecyprus">
-                        (<img id="android_image" title="android image" src="./images/logo_GooglePlay.png"> Google Play)
-                    </a>/
-                    <a id="item1b_rec_projects" class="recent_projects_links" href="./android/RefugeeGuideCyprus/">
-                        (<img id="github_image" title="github image" src="./images/github.png"> GitHub Files Code)
-                    </a>
-                </li>
-                <li class="recent_projects">
-                    <img id="web_image" title="web image" src="./images/logo_WWW.png">
-                    Geology Library:
-                    <a id="item2a_rec_projects" class="recent_projects_links" href="./web/geologylibrary/index.html">
-                        (Web)
-                    </a> / 
-                    <a id="item2b_rec_projects" class="recent_projects_links" href="https://github.com/tcsapin/tcsapin.github.io/tree/main/web/geologylibrary">
-                        (<img id="github_image" title="github image" src="./images/github.png"> Github Files Code)
-                    </a>
-                </li>
-            </ul>
+            <button id="dotBtn1" type="button" class="demo w3-opacity w3-hover-opacity-off fa fa-circle" onclick="currentDiv(0)"></button>
+            <button id="dotBtn2" type="button" class="demo w3-opacity w3-hover-opacity-off fa fa-circle" onclick="currentDiv(1)"></button>
+            
+        </div>
+        <script type="text/javascript" src="./script_image_slider.js"></script>
+        
+        <!-- Write here your description text -->
+        <div id="main_div">
+            <h2 id="main_div_title">Recent projects:</h2>
+            <div id="sub_div">
+                <ul id="main_list">
+                    <li class="recent_projects">
+                        <img id="android_image" title="android image" src="./images/logo_Android.png">
+                        Refugee Guide Cyprus: 
+                        <a id="item1a_rec_projects" class="recent_projects_links" href="https://play.google.com/store/apps/details?id=cy.euc.dcs.sp.refugeeguidecyprus">
+                            (<img id="android_image" title="android image" src="./images/logo_GooglePlay.png"> Google Play)
+                        </a>/
+                        <a id="item1b_rec_projects" class="recent_projects_links" href="./android/RefugeeGuideCyprus/">
+                            (<img id="github_image" title="github image" src="./images/github.png"> GitHub Files Code)
+                        </a>
+                    </li>
+                    <li class="recent_projects">
+                        <img id="web_image" title="web image" src="./images/logo_WWW.png">
+                        Geology Library:
+                        <a id="item2a_rec_projects" class="recent_projects_links" href="./web/geologylibrary/index.html">
+                            (Web)
+                        </a> / 
+                        <a id="item2b_rec_projects" class="recent_projects_links" href="https://github.com/tcsapin/tcsapin.github.io/tree/main/web/geologylibrary">
+                            (<img id="github_image" title="github image" src="./images/github.png"> Github Files Code)
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     <!-- Footer -->
     <footer>
-        <p><a class="fa fa-code w3-large w3-text-white "> Developed by Andreas Piniais</a></p>
-        <p>
-            <a id="footer_email" class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-white" href="mailto:andreaspiniais.tcs@outlook.com"></a>
-            <a href="mailto:andreaspiniais.tcs@outlook.com">andreaspiniais.tcs@outlook.com</a>
-        </p>
-        <p>
-            Find me on social media:
-        </p>
-        <p>
-            <a class="fa fa-facebook-official w3-hover-opacity w3-margin-right w3-xlarge" href="https://www.facebook.com/tkb.andreas" target="_blank"></a>
-            <!-- <a class="fa fa-instagram w3-hover-opacity w3-margin-right w3-large" href="https://www.instagram.com/tkb.andreas/" target="_blank"></a> -->
-            <!-- <a class="fa fa-snapchat w3-hover-opacity w3-margin-right w3-large" href="https://www.facebook.com/tkb.andreas" target="_blank"></a> -->
-            <!-- <a class="fa fa-pinterest-p w3-hover-opacity w3-margin-right w3-large" href="https://www.facebook.com/tkb.andreas" target="_blank"></a> -->
-            <a class="fa fa-twitter w3-hover-opacity w3-margin-right w3-xlarge" href="https://twitter.com/AndreasPiniais" target="_blank"></a>
-            <a class="fa fa-linkedin w3-hover-opacity w3-margin-right w3-xlarge" href="https://www.linkedin.com/in/tkb-andreas/" target="_blank"></a>
-        </p>
+        <div id="footer">
+            <p id="footer_p_developed"><a class="fa fa-code w3-large w3-text-white "> Developed by <i>Andreas Piniais</i></a></p>
+            <p id="footer_p_email">
+                <a id="footer_email" class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-white" href="mailto:andreaspiniais.tcs@outlook.com"></a>
+                <a href="mailto:andreaspiniais.tcs@outlook.com">andreaspiniais.tcs@outlook.com</a>
+            </p>
+            <p id="footer_p_find_me">
+                Find me on social media:
+            </p>
+            <p id="footer_p_social_media">
+                <a class="fa fa-facebook-official w3-hover-opacity w3-margin-right w3-xlarge" href="https://www.facebook.com/tkb.andreas" target="_blank"></a>
+                <!-- <a class="fa fa-instagram w3-hover-opacity w3-margin-right w3-large" href="https://www.instagram.com/tkb.andreas/" target="_blank"></a> -->
+                <!-- <a class="fa fa-snapchat w3-hover-opacity w3-margin-right w3-large" href="https://www.facebook.com/tkb.andreas" target="_blank"></a> -->
+                <!-- <a class="fa fa-pinterest-p w3-hover-opacity w3-margin-right w3-large" href="https://www.facebook.com/tkb.andreas" target="_blank"></a> -->
+                <a class="fa fa-twitter w3-hover-opacity w3-margin-right w3-xlarge" href="https://twitter.com/AndreasPiniais" target="_blank"></a>
+                <a class="fa fa-linkedin w3-hover-opacity w3-margin-right w3-xlarge" href="https://www.linkedin.com/in/tkb-andreas/" target="_blank"></a>
+            </p>
+        </div>
     </footer>
 </body>
 </html>
