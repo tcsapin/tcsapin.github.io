@@ -1,6 +1,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* background-color: rgba(0, 135, 224, 0.549); */
+    /* width: 100%; */
 }
 
 /* Header */
@@ -148,28 +149,36 @@ header{
 }
 
 /* Image Slider */
+
+#div_image_slider{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
 .mySlides {
-    padding: 1%;
+    padding: 8px;
     display: none;
     max-width: fit-content;
     width: 100%;
     border-radius: 20px;
 }
 
-#dotBtn1,#dotBtn2{
-    display: inline-block;
-    position: relative;
-    left: 45%;
+#dotBtn1, #dotBtn2{
     cursor: pointer;
     border: none;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.021);
-    max-width: fit-content;
-    width: 100%;
 }
 
 /* Description */
 #main_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(68, 103, 105);
     /* background-color: rgba(0, 0, 0, 0.5); */
     color: white;
@@ -178,19 +187,17 @@ header{
 }
 
 #sub_div{
-    padding-bottom: 1%;
     background-color: rgba(0, 0, 0, 0.3);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     color: white;
-    text-align: center;
     width: 100%;
 }
 
-#main_div_title
+/* #main_div_title
 {
     text-align: center;
-}
+} */
 
 #main_list  {    
     display: inline-block;
@@ -199,6 +206,7 @@ header{
     padding-bottom: 8px;
     padding: 8px;
     list-style-type: none;
+    /* width: 100%; */
 }
 
 /* home recent apps */
@@ -214,17 +222,27 @@ header{
     border-bottom: solid 1px;
 }
 
+/* Android and Web */
+#main_list_app{
+    display: grid;
+    /* width: fit-content; */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 8px;
+    margin-left: -24px;
+}
+
 .list_item{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 8px; */
     counter-increment: list-item 1;
     background-color: rgba(0, 0, 0, 0.274);
     border-radius: 10px;
     border: #bbb 1px;
     border-style: solid;
     max-width: fit-content;
-    padding: 8px;
-    margin-top: 8px;
-    margin-right: 8px;
     text-decoration: none;
 }
 
@@ -235,7 +253,7 @@ header{
 
 .list_item::before{
     content: counter(list-item)"\a0\a0";
-    /* counter-increment: list-item 1; */
+    /* counter-increment: list-item 0; */
     background-color: #000;
     border-radius: 5px;
     padding-left: 10px;
@@ -244,20 +262,18 @@ header{
 }
 
 .app_in_list{
-    display: block;
-    /* counter-increment: list-item 1; */
+    flex: 1;
     background-color: rgb(0, 0, 0);
     border-radius: 10px;
-    /* border: #bbb 1px; */
-    /* border-style: solid; */
+    /* border: #bbb solid 1px; */
     border-top: #bbb solid 1px;
     border-bottom: #bbb solid 1px;
-    /* max-width: fit-content; */
-    padding: 4px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    /* margin-right: 8px; */
+    padding: 8px;
+    margin: 8px;
+    /* margin-top: 8px; */
+    /* margin-bottom: 8px; */
     text-decoration: none;
+    /* width: min-content; */
 }
 
 /* .app_in_list:hover{
@@ -276,31 +292,27 @@ header{
 } */
 
 .app_in_list_title{
-    display: block;
     margin: auto ;
-    text-align: center;
 }
 
 .app_in_list_image{
-    display: block;
-    margin: 16px auto;
+    margin: 16px;
     padding: 8px;
     border-radius: 20px;
-    max-width: fit-content;
     width: 124px;
-    height: auto;
     background-color: white;
 }
 
-.app_link{
+.app_link{    
     display: inline-block;
     cursor: pointer;
     text-decoration: none;
-    width: fit-content;
+    width: 10rem;
     border-radius: 10px;
-    margin: 4px auto;
+    margin: 8px;
     padding: 4px;
     background-color: black;
+    
 }
 
 .app_link:hover{
@@ -352,29 +364,73 @@ td {padding: 12px}
 /* Footer */
 footer {
     clear: both;
-    background-color: grey;
-    color: white;
-    text-align: center;
-    
-    /* width: 100%; */
-    /* height: 100%; */
-    /* min-height: 20em; */
-    padding: 16px;
-    
+    width: 100%;
 }
 
 #footer{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: center;    
     flex-wrap: wrap;
     align-items: center;
-    align-content: center;
-    height: 40vh;
-    
+    align-content: center;    
+    background-color: grey;
+    color: white;
+    text-align: center;
+    height: 40vh;    
 }
 
 #footer p{
     flex-basis: 100%;
+}
+
+@media (max-width: 1716px)
+{
+    #main_list_app{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 1516px)
+{
+    #main_list_app{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 1230px)
+{
+    #main_list_app{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 1030px)
+{
+    #main_list_app{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 830px)
+{
+    #main_list_app{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 630px)
+{
+    #main_list_app{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 430px)
+{
+    #main_list_app{
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 307px) {
