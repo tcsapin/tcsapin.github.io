@@ -227,7 +227,7 @@ header{
 /* Android and Web */
 #main_list_app{
     display: grid;
-    grid-template-columns: fit-content fit-content fit-content fit-content fit-content fit-content fit-content fit-content;
+    grid-template-columns: min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content;
     gap: 8px;
     margin-left: -16px;
     margin-right: 24px;
@@ -400,6 +400,20 @@ td {padding: 12px}
 
 #footer p{
     flex-basis: 100%;
+}
+
+@media (max-width: 2150px)
+{
+    #main_list_app{
+        grid-template-columns: min-content min-content min-content min-content min-content min-content min-content min-content min-content;
+    }
+}
+
+@media (max-width: 1950px)
+{
+    #main_list_app{
+        grid-template-columns: min-content min-content min-content min-content min-content min-content min-content min-content;
+    }
 }
 
 @media (max-width: 1750px)
