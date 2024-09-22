@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <!-- Head -->
 <head>
     <meta charset="utf-8" name="viewport" content="device-width, initial-scale=1" />
@@ -13,37 +13,24 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>    
+    <script src="script.js"></script>
+    
+    <!-- Updated according to w3schools -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>    
+    <script> 
+      $(document).ready(function () {
+          $("div[data-includeHTML]").each(function () {                
+              $(this).load($(this).attr("data-includeHTML"));
+          });
+      });
+    </script> -->
+</head>
 <!-- Body -->
 <body class="w3-light-grey">
-  <!-- Header -->    
-  <header>
-    <div id="header" class="header">
-        <!-- Logo -->
-        <div id="header_logo">
-            <a id="header_logo_link" href="./index.html">
-                <h1 id="header_title">TCSAPin</h1>
-                <!-- <img id="header_image" src="./images/logo_tcsapin_3d.png" alt="TCS Andreas Piniais"> -->
-            </a>
-        </div>
-        <!-- Menu button -->
-        <div class="menu_button" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
-        <!-- Navigation bar -->
-        <div id="navbar" class="navbar">
-            <ul id="navbar_list">
-                <li class="navbar"><a href="./index.html">Home</a></li>
-                <li class="navbar"><a href="./about.html">About</a></li>
-                <li class="navbar"><a href="./android/index.html">Android Applications</a></li>
-                <li class="navbar"><a href="./web/index.html">Web Applications</a></li>                    
-            </ul>          
-        </div>
-        <script type="text/javascript" src="./script.js"></script>
-    </div>
-  </header>
+  <!-- Header -->
+  <!-- <div data-includeHTML="header.html"></div> -->
+  <div w3-include-html="header.html"></div>
+  
   <!-- Write here your description text -->
   <!-- Page Container -->
   <div class="w3-content w3-margin-top">
@@ -302,25 +289,12 @@
     <!-- End Page Container -->
   </div>
   <!-- Footer -->
-  <footer>
-    <div id="footer">
-        <p id="footer_p_developed"><a class="fa fa-code w3-large w3-text-white "> Developed by <i>Andreas Piniais</i></a></p>
-        <p id="footer_p_email">
-            <a id="footer_email" class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-white" href="mailto:andreaspiniais.tcs@outlook.com"></a>
-            <a href="mailto:andreaspiniais.tcs@outlook.com">andreaspiniais.tcs@outlook.com</a>
-        </p>
-        <p id="footer_p_find_me">
-            Find me on social media:
-        </p>
-        <p id="footer_p_social_media">
-            <a class="fa fa-facebook-official w3-hover-opacity w3-margin-right w3-xlarge" href="https://www.facebook.com/tkb.andreas" target="_blank"></a>
-            <!-- <a class="fa fa-instagram w3-hover-opacity w3-margin-right w3-large" href="https://www.instagram.com/tkb.andreas/" target="_blank"></a> -->
-            <!-- <a class="fa fa-snapchat w3-hover-opacity w3-margin-right w3-large" href="https://www.facebook.com/tkb.andreas" target="_blank"></a> -->
-            <!-- <a class="fa fa-pinterest-p w3-hover-opacity w3-margin-right w3-large" href="https://www.facebook.com/tkb.andreas" target="_blank"></a> -->
-            <a class="fa fa-twitter w3-hover-opacity w3-margin-right w3-xlarge" href="https://twitter.com/AndreasPiniais" target="_blank"></a>
-            <a class="fa fa-linkedin w3-hover-opacity w3-margin-right w3-xlarge" href="https://www.linkedin.com/in/tkb-andreas/" target="_blank"></a>
-        </p>
-    </div>
-  </footer>
+  <div w3-include-html="footer.html"></div>
+
+  <!-- Call includeHTML() at the bottom of the page -->
+  <script>
+    includeHTML();
+  </script>
 </body>
+
 </html>
